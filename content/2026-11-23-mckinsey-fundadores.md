@@ -1,6 +1,6 @@
 ---
-titulo: Por que a maioria das empresas de fundador trava, segundo a McKinsey
-linha_fina: Um estudo com mais de 2.700 empresas lideradas por fundadores mostra que só 10% chegam a US$ 10 bilhões. O motivo raramente é o produto. É o fundador que não muda de papel.
+titulo: "Só 10% das empresas de fundador chegam a US$ 10 bilhões. O que trava as outras?"
+linha_fina: A McKinsey analisou mais de 2.700 empresas lideradas por fundadores. O motivo raramente é o produto. Na maioria dos casos, é o fundador que não muda de papel quando a empresa cresce.
 editoria: artigos
 formato: leitura
 data: 2026-11-23 19:05
