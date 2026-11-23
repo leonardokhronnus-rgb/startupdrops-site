@@ -14,6 +14,7 @@ empresas: [Anthropic, SpaceX, OpenAI]
 na_pratica: "Com uma empresa de IA de ponta na bolsa, os números do setor passam a ser públicos: receita, custo de computação e margem. Acompanhe os primeiros balanços da Anthropic, em 2027. Eles vão virar referência para investidores avaliarem qualquer startup de IA, inclusive a sua."
 imagem: /static/img/drops/2026-11-23-anthropic-ipo.jpg
 credito_imagem: "Foto: Reprodução"
+destaque: true
 ---
 A Anthropic, empresa que desenvolve o Claude, começou a ser negociada na Nasdaq na quinta-feira, dia 19, com o código ANT. O IPO levantou US$ 81,3 bilhões e superou a SpaceX, que abriu capital em junho, como o maior da história.
 

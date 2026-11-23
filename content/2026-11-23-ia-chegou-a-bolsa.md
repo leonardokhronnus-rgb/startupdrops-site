@@ -12,7 +12,6 @@ empresas: [Anthropic, Palo Alto Networks, Applied Compute, CrowdStrike, Zscaler,
 na_pratica: "Se a sua startup usa IA, deixe claro no pitch o que é seu e o que é do fornecedor do modelo: dados próprios, distribuição, time ou integração com o cliente. Com empresas de IA na bolsa, o investidor vai comparar a sua margem com a delas, e quem só revende modelo de terceiros vai valer pouco."
 imagem: /static/img/drops/2026-11-23-ia-chegou-a-bolsa.jpg
 credito_imagem: "Ilustração StartupDrops"
-destaque: true
 ---
 A última semana resumiu o momento da inteligência artificial nos negócios.
 
