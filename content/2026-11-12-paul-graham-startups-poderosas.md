@@ -1,8 +1,8 @@
 ---
 imagem: /static/img/drops/2026-11-12-paul-graham-startups-poderosas.jpg
 credito_imagem: "Ilustração StartupDrops"
-titulo: "Paul Graham: a pergunta certa não é como ganhar mais dinheiro, é como ficar mais poderoso"
-linha_fina: No ensaio "Making Startups Powerful", o fundador da Y Combinator lista as estratégias que mudam o tamanho de uma empresa, de dominar a relação com o cliente a ser generoso de propósito.
+titulo: "A pergunta certa não é como ganhar mais dinheiro, é como ficar mais poderoso"
+linha_fina: No ensaio "Making Startups Powerful", Paul Graham, fundador da Y Combinator, lista as estratégias que mudam o tamanho de uma empresa, de dominar a relação com o cliente a ser generoso de propósito.
 editoria: artigos
 formato: leitura
 data: 2026-11-12 08:30
