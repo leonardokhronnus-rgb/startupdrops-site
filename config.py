@@ -10,6 +10,8 @@ SITE = {
     "newsletter_action": "https://buttondown.com/api/emails/embed-subscribe/startupdrops",  # vazio esconde o bloco
     "per_page": 20,
     "contato_email": "contato@startupdrops.com.br",
+    "comercial_email": "comercial@startupdrops.com.br",
+    "redacao_email": "redacao@startupdrops.com.br",
     "whatsapp": "5521959257362",
     "whatsapp_exibir": "(21) 95925-7362",
     "responsavel": "Elevu Design",
