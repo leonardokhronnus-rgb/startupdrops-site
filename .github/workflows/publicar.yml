@@ -29,10 +29,10 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements.txt
       - name: Montar o site
-        run: python build.py && python previa.py  # sem domínio próprio: links relativos (depois do domínio, publicar _site)
+        run: python build.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _previa
+          path: _site
       - id: deploy
         uses: actions/deploy-pages@v4
