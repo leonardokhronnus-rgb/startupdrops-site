@@ -21,7 +21,7 @@ SITE = {
 ANALYTICS = {
     # Umami (recomendado): visitantes, páginas, origem do tráfego e cliques, sem cookies.
     # Crie a conta grátis em cloud.umami.is, adicione o site e cole aqui o "Website ID".
-    "umami_website_id": "",
+    "umami_website_id": "ff1be631-d353-4086-a3d8-7b1a1c2cda21",
     "cloudflare_token": "",   # Cloudflare Web Analytics (grátis): token do snippet
     "plausible_domain": "",   # Plausible: ex. startupdrops.com.br
 }
