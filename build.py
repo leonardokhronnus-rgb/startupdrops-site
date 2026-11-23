@@ -269,6 +269,8 @@ def main():
     og.home_image(config.SITE["tagline"], OUT / "static" / "og" / "home.png")
 
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]))
+    import hashlib as _h
+    env.globals["css_v"] = _h.md5((ROOT / "static" / "style.css").read_bytes()).hexdigest()[:8]
     now = datetime.now(BRT)
     por_ed = {k: [d for d in drops if d["editoria"] == k] for k in config.EDITORIAS}
     common = dict(
