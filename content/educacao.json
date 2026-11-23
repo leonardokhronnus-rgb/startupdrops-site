@@ -1,0 +1,744 @@
+{
+ "modulos": [
+  {
+   "id": 0,
+   "nome": "Ideia & Mindset"
+  },
+  {
+   "id": 1,
+   "nome": "Validação & MVP"
+  },
+  {
+   "id": 2,
+   "nome": "Jurídico & Sócios"
+  },
+  {
+   "id": 3,
+   "nome": "Finanças"
+  },
+  {
+   "id": 4,
+   "nome": "Crescimento"
+  },
+  {
+   "id": 5,
+   "nome": "Vendas"
+  },
+  {
+   "id": 6,
+   "nome": "Gestão & Time"
+  },
+  {
+   "id": 7,
+   "nome": "Captação & Investidores"
+  },
+  {
+   "id": 8,
+   "nome": "Valuation & Saída"
+  }
+ ],
+ "drops": [
+  {
+   "modulo": 0,
+   "emoji": "🎯",
+   "titulo": "Boas ideias nascem de dores reais",
+   "texto": "Toda grande ideia resolve um problema que alguém sente no dia a dia. Antes de pensar no produto, identifique qual frustração você quer eliminar da vida de alguém."
+  },
+  {
+   "modulo": 0,
+   "emoji": "❤️",
+   "titulo": "Empreenda no que você ama ou domina",
+   "texto": "Se você não tem paixão ou habilidade no mercado em que vai atuar, vai desistir na primeira crise. Escolha um nicho que seja um hobby seu ou onde você é acima da média."
+  },
+  {
+   "modulo": 0,
+   "emoji": "📝",
+   "titulo": "Anote TODAS as suas ideias",
+   "texto": "Ideias parecem ruins no começo e vão se lapidando com o tempo. Não descarte nenhuma, crie uma lista e avalie os pontos positivos e negativos de cada uma ao longo das semanas."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🔍",
+   "titulo": "Mantenha seu radar ligado",
+   "texto": "As melhores oportunidades aparecem nas suas frustrações do dia a dia. Busque dores, ineficiências e ociosidades na sua rotina, elas são oportunidades disfarçadas."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🚀",
+   "titulo": "O que diferencia uma startup de uma empresa comum",
+   "texto": "Startup não é só ter tecnologia. É ter escalabilidade: crescer o faturamento sem crescer as despesas no mesmo ritmo. Pense se o seu modelo permite isso."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🌍",
+   "titulo": "Atue em mercados grandes",
+   "texto": "Não adianta ser escalável num mercado minúsculo. Antes de começar, pesquise o tamanho do setor, o número de clientes potenciais e quanto eles gastam por ano."
+  },
+  {
+   "modulo": 0,
+   "emoji": "⚡",
+   "titulo": "Agilidade é mais importante que perfeição",
+   "texto": "O método da Startup Enxuta ensina a encurtar o ciclo de desenvolvimento. Lance rápido, aprenda com os erros, melhore. O produto nunca estará perfeito no lançamento, e tudo bem."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🙅",
+   "titulo": "Ninguém vai roubar sua ideia",
+   "texto": "Ideias não valem nada sozinhas, o que vale é a execução. Fale da sua ideia com todo mundo: o feedback é mais valioso do que o risco de alguém copiar."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🤝",
+   "titulo": "Não empreenda sozinho",
+   "texto": "\"Se quiser ir rápido, vá sozinho. Se quiser ir longe, vá acompanhado.\" A jornada de uma startup é longa demais para trilhar sem um cofundador de confiança."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🧩",
+   "titulo": "Busque habilidades complementares",
+   "texto": "Seu sócio ideal não é igual a você. Se você é bom em vendas, busque alguém técnico. Se é analítico, busque alguém criativo. Habilidades opostas constroem empresas mais completas."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🔄",
+   "titulo": "3 formas de gerar novas ideias",
+   "texto": "(1) Copie e melhore o que já existe. (2) Observe toda a cadeia produtiva de um nicho que você gosta. (3) Faça benchmark: liste 3 a 5 empresas para se inspirar em cada ideia gerada."
+  },
+  {
+   "modulo": 0,
+   "emoji": "📊",
+   "titulo": "TAM, SAM e SOM: conheça seu mercado",
+   "texto": "TAM é o mercado total. SAM é o mercado que você consegue alcançar. SOM é o que pode capturar agora. Calcule os três antes de apresentar sua ideia a qualquer investidor."
+  },
+  {
+   "modulo": 1,
+   "emoji": "✅",
+   "titulo": "Validação é mais importante que a ideia",
+   "texto": "Antes de abrir CNPJ, contratar alguém ou largar o emprego: prove que existe demanda. Validar significa encontrar pessoas dispostas a pagar pelo que você vai oferecer."
+  },
+  {
+   "modulo": 1,
+   "emoji": "⚠️",
+   "titulo": "Amigo elogia, cliente paga",
+   "texto": "Seus amigos vão dizer que sua ideia é ótima. Mas dizer que é boa é muito diferente de pagar por ela. Só a compra real confirma que a ideia tem potencial de mercado."
+  },
+  {
+   "modulo": 1,
+   "emoji": "🎯",
+   "titulo": "A Netflix começou entregando DVDs",
+   "texto": "Ideias de negócio evoluem com o tempo. Não espere ter a ideia perfeita para começar. Comece pelo mais simples e vá lapidando com o feedback do mercado."
+  },
+  {
+   "modulo": 1,
+   "emoji": "🏗️",
+   "titulo": "O que é MVP e para que serve",
+   "texto": "MVP (Produto Mínimo Viável) é uma versão enxuta do seu produto que já entrega o mesmo valor essencial. Serve para testar como o mercado reage antes de investir tudo no produto completo."
+  },
+  {
+   "modulo": 1,
+   "emoji": "✈️",
+   "titulo": "O Airbnb começou com colchões na sala",
+   "texto": "Os fundadores alugaram sua própria sala de estar para pagar o aluguel. O MVP não precisa ser sofisticado, precisa entregar o valor central do produto."
+  },
+  {
+   "modulo": 1,
+   "emoji": "🚗",
+   "titulo": "O Uber funcionava só no iPhone em SF",
+   "texto": "No começo, o Uber era para um passageiro por vez, só em iOS, só em São Francisco. Sem rastreamento ao vivo. A lição: comece pelo mais enxuto possível."
+  },
+  {
+   "modulo": 1,
+   "emoji": "❌",
+   "titulo": "Dois erros fatais no estágio do MVP",
+   "texto": "(1) Ficar só na ideia esperando o momento perfeito. (2) Querer o produto perfeito antes de lançar. O objetivo do MVP é testar rápido, não construir algo acabado."
+  },
+  {
+   "modulo": 1,
+   "emoji": "🔁",
+   "titulo": "Pivotar não é desistir",
+   "texto": "Pivotar significa mudar a estratégia sem mudar a visão. O Instagram começou como um app de check-in. Mudar de rota faz parte da jornada."
+  },
+  {
+   "modulo": 1,
+   "emoji": "📍",
+   "titulo": "O que é Product Market Fit",
+   "texto": "PMF é quando você encontra um produto que o mercado realmente quer. Sinal claro: clientes compram mais rápido do que você entrega e eles mesmos indicam sua empresa."
+  },
+  {
+   "modulo": 1,
+   "emoji": "♾️",
+   "titulo": "Lançamento é um processo contínuo",
+   "texto": "Esqueça a ideia de que lançar acontece uma única vez. Você lança, recebe feedback, melhora, lança de novo, para diferentes públicos e canais. É uma atividade permanente."
+  },
+  {
+   "modulo": 2,
+   "emoji": "📄",
+   "titulo": "Acordo de sócios é obrigatório",
+   "texto": "Não existe \"acordo de gaveta\" no mundo dos negócios. Mesmo com amigos e família, formalize tudo: funções, horas semanais, o que acontece se um sócio sair, cláusula de não concorrência."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🏢",
+   "titulo": "Comece como LTDA",
+   "texto": "A LTDA é o tipo societário mais recomendado para startups: permite ter sócios, captar investimento e se enquadrar no Simples Nacional, reduzindo impostos e burocracia."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🏆",
+   "titulo": "O prêmio está no equity, não no salário",
+   "texto": "Quem funda uma startup não fica rico pelo salário, fica pelo equity. Distribua participações de forma justa: pondere investimento financeiro, horas dedicadas e habilidade agregada."
+  },
+  {
+   "modulo": 2,
+   "emoji": "⚖️",
+   "titulo": "50-50 só se a dedicação for igual",
+   "texto": "Se um sócio trabalha meio período e o outro em tempo integral, dividir igualmente é injusto e vai gerar conflito. Pondere a participação pela contribuição real de cada um."
+  },
+  {
+   "modulo": 2,
+   "emoji": "⏳",
+   "titulo": "O que é Vesting",
+   "texto": "Vesting é um contrato onde o sócio recebe sua participação ao longo do tempo, conforme contribui. Evita o problema de alguém ficar com equity depois de sair da empresa com 1 mês."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🧱",
+   "titulo": "O que é Cliff",
+   "texto": "Cliff é o período mínimo que o sócio precisa ficar na empresa antes de ter direito a qualquer participação. O mais comum é 1 ano. Antes disso, saiu sem nada."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🔍",
+   "titulo": "Escolha o nome com cuidado",
+   "texto": "Nome curto, fácil de escrever, que não limite o crescimento futuro. Verifique se o domínio .com.br está disponível ANTES de se apegar ao nome. Trocar depois é caro e trabalhoso."
+  },
+  {
+   "modulo": 2,
+   "emoji": "💻",
+   "titulo": "Encontrando sócio de tecnologia",
+   "texto": "Faça uma lista de conhecidos que programam, classifique os 5 melhores e faça uma proposta formal com equity e salário. Nada de conversa informal no churrasco, leve a sério."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🏦",
+   "titulo": "Reserva financeira antes de empreender",
+   "texto": "Calcule seu gasto mensal mínimo e multiplique por 6. Esse é o valor mínimo que você precisa ter guardado antes de largar o emprego para empreender. Sem isso, a primeira crise te derruba."
+  },
+  {
+   "modulo": 3,
+   "emoji": "💡",
+   "titulo": "Dinheiro não é o problema",
+   "texto": "A maioria dos empreendedores usa falta de dinheiro como desculpa. O problema real é a incerteza, você não tem certeza que a ideia vai funcionar. Resolva isso validando antes de investir."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🔢",
+   "titulo": "O que é DRE e por que importa",
+   "texto": "O DRE mostra se sua empresa está dando lucro ou prejuízo. É o raio-X financeiro do negócio: faturamento, impostos, custos e resultado final. Todo empreendedor precisa entender."
+  },
+  {
+   "modulo": 3,
+   "emoji": "📉",
+   "titulo": "O que é Break-even",
+   "texto": "Break-even é o ponto em que receitas e despesas se igualam, nem lucro, nem prejuízo. A partir daí sua empresa começa a recuperar o investimento. Calcule o seu e persiga essa meta."
+  },
+  {
+   "modulo": 3,
+   "emoji": "📊",
+   "titulo": "Acompanhe receitas e despesas todo mês",
+   "texto": "O básico da gestão financeira é saber quanto entra e quanto sai. Sem isso, você não sabe se pode contratar, se aguenta mais 3 meses ou se precisa captar investimento agora."
+  },
+  {
+   "modulo": 3,
+   "emoji": "💲",
+   "titulo": "Precificação: 3 variáveis essenciais",
+   "texto": "Preço, Custo e Valor. A diferença entre Preço e Custo é sua margem. A diferença entre Preço e Valor é o incentivo do cliente para comprar. Quanto mais valor percebido, mais fácil vender."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🎯",
+   "titulo": "KPIs: meça o que importa",
+   "texto": "KPIs são os indicadores que mostram se você está indo na direção certa. Defina metas claras e acompanhe semanalmente. Sem dados, você gerencia no escuro."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🌱",
+   "titulo": "O que é Growth Hacking",
+   "texto": "Growth são técnicas e testes para crescer rapidamente. O Hotmail foi de 0 a 1 milhão de usuários em 6 meses adicionando uma linha simples no rodapé de cada email enviado."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🎯",
+   "titulo": "Bullseye: encontre seu canal ideal",
+   "texto": "O Bullseye Framework analisa 20+ canais de aquisição e chega aos 3 com maior potencial para sua empresa. Não tente estar em todos os canais ao mesmo tempo, foque nos mais promissores."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🔁",
+   "titulo": "Reter clientes é mais barato que adquirir",
+   "texto": "Um aumento de 5% na retenção pode aumentar a receita em 25% a 95%. Focar só em novos clientes ignorando os atuais é uma das maiores armadilhas de startups em crescimento."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🔎",
+   "titulo": "Analise seus concorrentes de verdade",
+   "texto": "Use SEMrush para ver quais palavras-chave seus concorrentes anunciam. Concorrente não é só quem atua no mesmo setor, é quem disputa o mesmo cliente."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🏅",
+   "titulo": "Diferencial competitivo: seja único",
+   "texto": "Diferencial não é o que você acha que é especial, é o que o cliente vê como vantagem. Use a Matriz VRIO: o diferencial precisa ter Valor, ser Raro, difícil de Imitar e bem Aproveitado."
+  },
+  {
+   "modulo": 4,
+   "emoji": "📱",
+   "titulo": "Redes sociais: foco no B2C",
+   "texto": "Empresas que vendem para pessoa física têm vantagem enorme nas redes sociais. Escolha 2 ou 3 plataformas e seja consistente. Presença online não é opcional, é sobrevivência."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🛍️",
+   "titulo": "Página de vendas é seu melhor vendedor",
+   "texto": "Uma boa landing page trabalha 24h por dia. Ela precisa ter: headline impactante, prova social, benefícios claros, objeções respondidas e um call-to-action irresistível."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🤝",
+   "titulo": "O que é venda B2B",
+   "texto": "B2B é vender de empresa para empresa. O ticket médio é maior, mas o ciclo de venda é mais longo e complexo. Você precisa convencer quem toma a decisão, não apenas quem usa o produto."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🧭",
+   "titulo": "5 etapas do processo de vendas B2B",
+   "texto": "(1) Pesquisa de mercado. (2) Defina sua persona ideal. (3) Prospecte os leads certos. (4) Apresente com foco na dor do cliente. (5) Feche com proposta personalizada."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🌀",
+   "titulo": "SPIN Selling em 4 perguntas",
+   "texto": "S: Qual é a situação atual do cliente? P: Qual problema ele enfrenta? I: Quais as implicações desse problema? N: O que ele precisa para resolver? Venda solução, não produto."
+  },
+  {
+   "modulo": 5,
+   "emoji": "💰",
+   "titulo": "Precifique pelo valor, não pelo custo",
+   "texto": "Quanto mais valor o cliente percebe em relação ao preço que paga, mais inclinado a comprar ele fica. Precificar só pelo custo limita sua margem e posicionamento."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🔄",
+   "titulo": "Pós-venda é onde mora o lucro",
+   "texto": "Clientes que retornam compram mais, pagam mais e indicam outros. Invista no relacionamento pós-venda: onboarding, suporte proativo, pesquisa de satisfação."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🧬",
+   "titulo": "Cultura é comportamento, não decoração",
+   "texto": "Não é a mesa de ping-pong nem a cerveja na sexta. Cultura é como as pessoas agem na sua empresa. Defina os comportamentos que quer ver e seja o primeiro a praticá-los."
+  },
+  {
+   "modulo": 6,
+   "emoji": "👥",
+   "titulo": "Construa cultura nos primeiros 20",
+   "texto": "A cultura que seus primeiros funcionários absorverem vai ser replicada para todos os próximos. Contrate pessoas com o DNA certo desde o início, mudar cultura depois é muito mais difícil."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🌟",
+   "titulo": "Atraia talentos com propósito",
+   "texto": "Startups não competem com grandes empresas em salário. Competem em propósito, autonomia, impacto e oportunidade de crescimento. Use isso a seu favor na hora de contratar."
+  },
+  {
+   "modulo": 6,
+   "emoji": "☁️",
+   "titulo": "Todos os dados precisam estar na nuvem",
+   "texto": "Dados em um único computador é risco. Use Google Drive ou Notion para centralizar tudo. A equipe colabora em tempo real, sem versões perdidas, de qualquer lugar."
+  },
+  {
+   "modulo": 6,
+   "emoji": "📌",
+   "titulo": "Falta de foco mata startups",
+   "texto": "O principal motivo de falha de startups não é falta de dinheiro, é falta de foco. Centralize informações, defina prioridades semanais e proteja o tempo da equipe das distrações."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🌐",
+   "titulo": "Canvas é melhor que Plano de Negócios",
+   "texto": "Planos de negócios levam meses e ficam obsoletos rapidamente. O Business Model Canvas é uma página, visual, rápido e pode ser atualizado em minutos. É o que startups de sucesso usam."
+  },
+  {
+   "modulo": 6,
+   "emoji": "📐",
+   "titulo": "Crie um site em menos de 1 dia",
+   "texto": "Use WordPress + Elementor para sites com mais controle, ou Wix para algo mais rápido. Registre o domínio no registro.br. O site não precisa ser perfeito, precisa existir."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🧪",
+   "titulo": "Teste a ideia antes de largar o emprego",
+   "texto": "Dá para validar muita coisa à noite e no fim de semana: conversar com clientes, vender a primeira versão, medir interesse. Saia do emprego quando os sinais forem reais, não quando a vontade bater."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🪞",
+   "titulo": "Apaixone-se pelo problema, não pela solução",
+   "texto": "A primeira solução quase sempre está errada. Quem é apegado ao problema troca de solução sem drama. Quem é apegado ao produto insiste no erro."
+  },
+  {
+   "modulo": 0,
+   "emoji": "⏱️",
+   "titulo": "Por que agora?",
+   "texto": "Toda boa startup responde essa pergunta: o que mudou no mundo (tecnologia, lei, comportamento) que torna a ideia possível hoje e não há cinco anos? Sem essa resposta, alguém já teria feito."
+  },
+  {
+   "modulo": 0,
+   "emoji": "🧱",
+   "titulo": "Concorrência é sinal de mercado",
+   "texto": "Não ter concorrente costuma significar que não existe mercado. Ter concorrente prova que há gente pagando. Seu trabalho é achar o que eles fazem mal."
+  },
+  {
+   "modulo": 1,
+   "emoji": "🗣️",
+   "titulo": "Pergunte sobre o passado, não sobre o futuro",
+   "texto": "\"Você usaria?\" gera respostas educadas e falsas. Pergunte: \"Como você resolveu isso da última vez? Quanto gastou?\". Comportamento passado diz mais que intenção futura."
+  },
+  {
+   "modulo": 1,
+   "emoji": "💳",
+   "titulo": "A melhor validação é um pagamento",
+   "texto": "Interesse, curtida e cadastro valem pouco. Pré-venda, sinal ou contrato assinado mostram que o problema dói de verdade."
+  },
+  {
+   "modulo": 1,
+   "emoji": "🧍",
+   "titulo": "Faça à mão antes de automatizar",
+   "texto": "Entregue o serviço manualmente para os primeiros clientes. Você aprende o processo, descobre o que importa e só programa o que já provou funcionar."
+  },
+  {
+   "modulo": 1,
+   "emoji": "📏",
+   "titulo": "Defina o critério de sucesso antes do teste",
+   "texto": "Antes de lançar o MVP, escreva qual número prova que funcionou, por exemplo 20 clientes pagantes em 30 dias. Sem meta definida antes, todo resultado parece bom."
+  },
+  {
+   "modulo": 1,
+   "emoji": "👥",
+   "titulo": "Converse com 30 clientes antes de construir",
+   "texto": "Trinta conversas mostram padrões que nenhuma planilha mostra. Se você não consegue marcar 30 conversas, vai ter dificuldade para vender também."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🛡️",
+   "titulo": "Registre a marca no INPI cedo",
+   "texto": "O registro garante que ninguém use seu nome no seu ramo. Faça a busca e o pedido antes de investir em marketing: trocar de nome depois sai caro."
+  },
+  {
+   "modulo": 2,
+   "emoji": "📜",
+   "titulo": "Contrato com quem desenvolve o produto",
+   "texto": "Se um freelancer ou agência fez o seu software, garanta por contrato que o código e a propriedade intelectual são da empresa. Investidor e comprador vão pedir isso."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🧾",
+   "titulo": "O que é cap table",
+   "texto": "É a tabela que mostra quem tem quanto da empresa, incluindo opções e investimentos conversíveis. Mantenha sempre atualizada: um cap table bagunçado trava rodada e venda."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🔀",
+   "titulo": "Mútuo conversível em uma frase",
+   "texto": "É um empréstimo que o investidor faz e que vira participação na próxima rodada, normalmente com desconto ou teto de valuation. É rápido e barato para rodadas iniciais."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🚪",
+   "titulo": "Tag along e drag along",
+   "texto": "Tag along: se o controlador vender, o minoritário pode vender junto pelo mesmo preço. Drag along: se a maioria vender, pode obrigar o minoritário a vender junto. Os dois evitam impasses na saída."
+  },
+  {
+   "modulo": 2,
+   "emoji": "🏛️",
+   "titulo": "Quando virar S.A.",
+   "texto": "A LTDA é simples e barata no começo. A S.A. facilita entrada de investidores, plano de opções e governança. Muitas startups migram quando recebem rodada institucional."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🔥",
+   "titulo": "O que é burn rate",
+   "texto": "É quanto dinheiro a empresa queima por mês. Se você tem R$ 600 mil em caixa e queima R$ 50 mil, tem 12 meses de vida."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🛫",
+   "titulo": "Runway: quanto tempo você tem",
+   "texto": "Runway é o número de meses até o caixa acabar. Comece a captar com pelo menos 9 a 12 meses de runway: rodada leva tempo e desespero derruba o preço."
+  },
+  {
+   "modulo": 3,
+   "emoji": "💧",
+   "titulo": "Lucro não é caixa",
+   "texto": "A empresa pode dar lucro e quebrar por falta de caixa, se vende a prazo e paga à vista. Acompanhe o fluxo de caixa toda semana, não só o resultado do mês."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🧮",
+   "titulo": "CAC e LTV",
+   "texto": "CAC é quanto custa conquistar um cliente. LTV é quanto ele deixa de margem durante toda a relação. Se o LTV não é pelo menos 3 vezes o CAC, o crescimento destrói valor."
+  },
+  {
+   "modulo": 3,
+   "emoji": "⏳",
+   "titulo": "Payback do CAC",
+   "texto": "É em quantos meses a margem de um cliente paga o custo de conquistá-lo. Abaixo de 12 meses é saudável. Muito acima disso, você precisa de capital para crescer."
+  },
+  {
+   "modulo": 3,
+   "emoji": "📈",
+   "titulo": "Margem bruta diz o tipo de negócio",
+   "texto": "Software costuma ter margem bruta acima de 70%. Serviços e varejo ficam bem abaixo. Investidor paga múltiplos maiores para margens maiores."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🧾",
+   "titulo": "Separe as contas da empresa e as suas",
+   "texto": "Misturar dinheiro pessoal com o da empresa esconde o resultado real e complica imposto, auditoria e venda. Defina um pró-labore e não saque fora dele."
+  },
+  {
+   "modulo": 3,
+   "emoji": "🏷️",
+   "titulo": "Escolha o regime tributário com contador",
+   "texto": "Simples Nacional, Lucro Presumido e Lucro Real podem gerar impostos muito diferentes para a mesma receita. Revise a escolha todo ano com base nos números."
+  },
+  {
+   "modulo": 4,
+   "emoji": "⭐",
+   "titulo": "Defina sua métrica norte",
+   "texto": "Escolha um único número que mostra se os clientes recebem valor, como pedidos por semana ou empresas ativas. O time inteiro passa a remar para o mesmo lado."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🧲",
+   "titulo": "Indicação é o canal mais barato",
+   "texto": "Cliente satisfeito traz cliente parecido, sem custo de mídia. Crie um motivo e um caminho simples para indicar, e meça quantos clientes chegam assim."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🪣",
+   "titulo": "Churn é o balde furado",
+   "texto": "Churn é a porcentagem de clientes que cancelam por mês. Crescer com churn alto é encher um balde furado. Resolva a retenção antes de acelerar a aquisição."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🧪",
+   "titulo": "Rode testes pequenos e rápidos",
+   "texto": "Teste um canal ou mensagem com pouco dinheiro e prazo curto. Dobre a aposta no que funciona e mate rápido o que não funciona."
+  },
+  {
+   "modulo": 4,
+   "emoji": "📝",
+   "titulo": "Conteúdo atrai cliente enquanto você dorme",
+   "texto": "Responder as dúvidas do seu cliente em artigos, vídeos e posts gera tráfego que não para quando a verba de anúncio acaba. Exige constância, mas acumula."
+  },
+  {
+   "modulo": 4,
+   "emoji": "🔗",
+   "titulo": "Parcerias aceleram distribuição",
+   "texto": "Uma empresa que já atende o seu cliente pode vender ou indicar o seu produto. Uma boa parceria vale meses de esforço comercial."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🎯",
+   "titulo": "Defina o seu cliente ideal (ICP)",
+   "texto": "Descreva o perfil da empresa que mais ganha com seu produto: setor, tamanho, dor, quem decide. Vender para todo mundo é não vender para ninguém."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🧑‍💼",
+   "titulo": "Fundador vende primeiro",
+   "texto": "Os primeiros clientes devem ser vendidos pelo fundador. Só assim você aprende as objeções e consegue ensinar o processo para um vendedor depois."
+  },
+  {
+   "modulo": 5,
+   "emoji": "📋",
+   "titulo": "Use um CRM desde o começo",
+   "texto": "Planilha e memória perdem oportunidades. Um CRM simples mostra onde cada negociação está, quanto tem no funil e qual etapa trava."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🧊",
+   "titulo": "Prospecção fria precisa de cadência",
+   "texto": "Uma mensagem só raramente funciona. Planeje uma sequência de contatos em canais diferentes ao longo de algumas semanas, sempre com algo útil para o cliente."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🛑",
+   "titulo": "Objeção é informação",
+   "texto": "Quando o cliente diz \"está caro\", ele muitas vezes quer dizer \"não entendi o valor\". Pergunte o motivo antes de dar desconto."
+  },
+  {
+   "modulo": 5,
+   "emoji": "📆",
+   "titulo": "Sempre marque o próximo passo",
+   "texto": "Nenhuma reunião de venda deve terminar sem data e responsável pela próxima etapa. Negociação sem próximo passo esfria."
+  },
+  {
+   "modulo": 5,
+   "emoji": "🎓",
+   "titulo": "Quem decide e quem influencia",
+   "texto": "Em vendas B2B, quem usa o produto, quem paga e quem aprova costumam ser pessoas diferentes. Mapeie todos e fale com cada um sobre o que importa para ele."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🎯",
+   "titulo": "OKRs: objetivo e resultado-chave",
+   "texto": "Defina poucos objetivos por trimestre e, para cada um, 2 a 4 resultados mensuráveis. Fica claro o que importa e o que pode esperar."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🐢",
+   "titulo": "Contrate devagar, demita rápido",
+   "texto": "Uma contratação errada custa caro e contamina o time. Seja exigente no processo e aja rápido quando o encaixe não acontece."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🗓️",
+   "titulo": "Reunião semanal de números",
+   "texto": "Reserve um horário fixo para olhar caixa, vendas e metas com o time. Problema visto cedo custa pouco para resolver."
+  },
+  {
+   "modulo": 6,
+   "emoji": "📚",
+   "titulo": "Documente os processos",
+   "texto": "Se só uma pessoa sabe fazer algo, a empresa depende dela. Processo escrito facilita treinar, delegar e, no futuro, vender a empresa."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🪜",
+   "titulo": "Delegue resultado, não tarefa",
+   "texto": "Diga o que precisa ser alcançado e até quando, e deixe a pessoa decidir como. Você ganha tempo e o time cresce."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🎁",
+   "titulo": "Plano de opções segura talentos",
+   "texto": "Stock options dão ao funcionário o direito de comprar uma parte da empresa no futuro, com vesting. É um jeito de pagar menos salário hoje e reter quem faz diferença."
+  },
+  {
+   "modulo": 6,
+   "emoji": "🧠",
+   "titulo": "O fundador também precisa de rotina",
+   "texto": "Sono, treino e tempo fora do trabalho não são luxo. Fundador esgotado toma decisões piores e a empresa sente."
+  },
+  {
+   "modulo": 7,
+   "emoji": "❓",
+   "titulo": "Você precisa mesmo de investidor?",
+   "texto": "Investimento acelera, mas custa participação e traz cobrança de crescimento rápido. Muitas empresas boas crescem com receita própria. Capte quando o dinheiro multiplicar algo que já funciona."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🪜",
+   "titulo": "As fases de uma rodada",
+   "texto": "Pre-seed e seed financiam validação e primeiros clientes. Série A financia um modelo que já funciona. Séries B em diante aceleram escala. Cada fase pede provas diferentes."
+  },
+  {
+   "modulo": 7,
+   "emoji": "👼",
+   "titulo": "Investidor-anjo",
+   "texto": "É uma pessoa física que investe dinheiro próprio no começo, muitas vezes junto com conselho e contatos. No Brasil, o aporte de anjo tem regras próprias na Lei Complementar 155/2016."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🏦",
+   "titulo": "Como funciona um fundo de venture capital",
+   "texto": "O fundo capta dinheiro de investidores e precisa devolver com lucro em cerca de 10 anos. Por isso busca empresas que possam valer muito, não apenas negócios bons."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🖼️",
+   "titulo": "O pitch deck em 10 slides",
+   "texto": "Problema, solução, mercado, produto, modelo de negócio, tração, concorrência, time, números e quanto você quer captar. Simples, direto e com dados."
+  },
+  {
+   "modulo": 7,
+   "emoji": "📂",
+   "titulo": "Tenha o data room pronto",
+   "texto": "Contrato social, cap table, contratos, demonstrativos, métricas e propriedade intelectual organizados numa pasta. Isso acelera a due diligence e passa confiança."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🔪",
+   "titulo": "Diluição: quanto ceder por rodada",
+   "texto": "É comum ceder entre 10% e 25% por rodada. Ceda demais cedo e os fundadores chegam à Série B com pouca participação e pouco incentivo."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🔁",
+   "titulo": "Capte de quem entende o seu setor",
+   "texto": "Investidor que conhece o mercado abre portas, ajuda a contratar e entende os ciclos do negócio. Dinheiro de quem não entende cobra a coisa errada."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🚩",
+   "titulo": "Termos que pedem atenção",
+   "texto": "Preferência de liquidação acima de 1x, direito de veto amplo e cláusulas de recompra agressivas podem pesar mais que o valuation. Leia o term sheet inteiro com um advogado."
+  },
+  {
+   "modulo": 8,
+   "emoji": "⚖️",
+   "titulo": "Valuation é estimativa, não verdade",
+   "texto": "O valor de uma empresa depende de quem compra, para quê e em que momento. Os métodos dão uma faixa razoável. O preço final sai da negociação."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🔮",
+   "titulo": "Fluxo de caixa descontado (DCF)",
+   "texto": "Projeta o caixa que a empresa vai gerar nos próximos anos e traz para hoje com uma taxa que reflete o risco. Quanto maior o risco, maior a taxa e menor o valor."
+  },
+  {
+   "modulo": 8,
+   "emoji": "📐",
+   "titulo": "Múltiplos de mercado",
+   "texto": "Compara a empresa com outras parecidas usando múltiplos como valor sobre receita ou sobre Ebitda. É rápido, mas depende de achar comparáveis de verdade."
+  },
+  {
+   "modulo": 8,
+   "emoji": "➕",
+   "titulo": "Pre-money e post-money",
+   "texto": "Pre-money é o valor antes do aporte. Post-money é o pre-money mais o dinheiro que entrou. Investir R$ 2 milhões a R$ 8 milhões pre-money dá ao investidor 20% da empresa."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🚀",
+   "titulo": "O que mais aumenta o valuation",
+   "texto": "Receita recorrente, crescimento consistente, margem alta, baixa dependência do fundador e de poucos clientes, e números organizados. Tudo isso reduz o risco para quem compra."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🤝",
+   "titulo": "Comprador estratégico paga mais",
+   "texto": "Uma empresa do setor ganha sinergias (clientes, canal, tecnologia) que um investidor financeiro não tem. Por isso pode justificar um preço maior."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🧾",
+   "titulo": "Earn-out: parte do preço depois",
+   "texto": "É quando parte do pagamento depende de metas futuras. Ajuda a fechar a diferença entre o preço que o vendedor quer e o que o comprador aceita, mas defina as metas com clareza."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🗓️",
+   "titulo": "Prepare a venda anos antes",
+   "texto": "Contabilidade limpa, contratos em ordem, processos documentados e uma operação que não depende só de você. Quem prepara com antecedência vende melhor e mais rápido."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🔎",
+   "titulo": "O que é due diligence",
+   "texto": "É a auditoria que o comprador ou investidor faz antes de fechar: contas, impostos, contratos, trabalhista, tecnologia. Surpresas nessa fase derrubam o preço ou o negócio."
+  }
+ ]
+}

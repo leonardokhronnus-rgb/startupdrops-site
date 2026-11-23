@@ -1,0 +1,1 @@
+<div class="visual v-{{ d.editoria }}{% if d.imagem %} has-photo{% endif %}">{% if d.imagem %}<img src="{{ d.thumb }}" srcset="{{ d.thumb }} 720w, {{ d.img_full }} 1400w" sizes="{{ vis_sizes | default('(max-width:650px) 100vw, 360px') }}" alt="" loading="lazy" decoding="async" width="720" height="405">{% else %}<span class="illustration">{{ d.simbolo }}</span>{% endif %}</div>

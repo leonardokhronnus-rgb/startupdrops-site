@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block intro %}
+<section class="intro compact"><div class="wrap"><div><div class="eyebrow">TODA SEMANA</div><h1>Deal da <em>Semana.</em></h1></div><p class="intro-desc">A rodada ou aquisição que mais diz sobre o mercado, com a nossa leitura de valuation: quanto valeu, o que o número implica e se foi caro ou barato.</p></div></section>
+{% endblock %}
+{% block main %}
+<div class="news-layout"><section>
+  {% if itens %}<div class="radar-list" style="grid-template-columns:1fr">{% for d in itens %}{% set n = loop.index %}{% include "_radar.html" %}{% endfor %}</div>
+  {% else %}<p class="no-results" style="display:block">O primeiro Deal da Semana sai em breve.</p>{% endif %}
+</section>{% include "_sidebar.html" %}</div>
+{% endblock %}

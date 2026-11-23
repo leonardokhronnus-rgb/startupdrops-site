@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block intro %}<section class="intro compact"><div class="wrap"><div><div class="eyebrow">LGPD</div><h1>Política de <em>privacidade.</em></h1></div><p class="intro-desc">Como tratamos os seus dados, em linguagem simples.</p></div></section>{% endblock %}
+{% block main %}
+<div class="news-layout"><article class="article prose">
+  <p><em>Última atualização: {{ hoje }}.</em></p>
+  <h2>Quem somos</h2>
+  <p>O {{ site.name }} é uma publicação digital sobre startups, investimentos, economia e negócios. O {{ site.name }} é publicado pela {{ site.responsavel }}, CNPJ {{ site.cnpj }}, com sede na {{ site.endereco }}, que é a responsável pelo tratamento dos dados (controladora).</p>
+  <h2>Quais dados coletamos</h2>
+  <ul>
+    <li><strong>E-mail</strong>, quando você assina a newsletter.</li>
+    <li><strong>Dados de navegação agregados e anônimos</strong> (páginas vistas, país, tipo de dispositivo), para entender a audiência. Usamos ferramenta de medição que <strong>não usa cookies</strong> e não identifica você individualmente.</li>
+  </ul>
+  <p>Não vendemos dados, não usamos cookies de publicidade e não coletamos dados sensíveis.</p>
+  <h2>Para que usamos</h2>
+  <ul>
+    <li>Enviar a newsletter que você pediu para receber.</li>
+    <li>Medir, de forma agregada, quais conteúdos são mais lidos e informar números de audiência a anunciantes e patrocinadores, sempre de forma consolidada, nunca com dados individuais.</li>
+  </ul>
+  <h2>Base legal</h2>
+  <p>O envio da newsletter se baseia no seu <strong>consentimento</strong> (art. 7º, I, da LGPD), que você pode retirar a qualquer momento pelo link de descadastro presente em todo e-mail. A medição agregada de audiência se baseia no nosso <strong>legítimo interesse</strong> (art. 7º, IX) em melhorar a publicação.</p>
+  <h2>Com quem compartilhamos</h2>
+  <p>Apenas com os fornecedores que operam o serviço: a plataforma de envio da newsletter, a ferramenta de medição de audiência e a hospedagem do site. Alguns desses fornecedores podem armazenar dados fora do Brasil, com as salvaguardas previstas na LGPD.</p>
+  <h2>Por quanto tempo guardamos</h2>
+  <p>O seu e-mail fica na nossa lista enquanto você for assinante. Ao cancelar, ele é removido da lista de envio.</p>
+  <h2>Seus direitos</h2>
+  <p>Você pode, a qualquer momento, pedir confirmação de que tratamos seus dados, acesso, correção, exclusão, portabilidade e informações sobre compartilhamento, além de revogar o consentimento (art. 18 da LGPD).
+  {% if site.contato_email %}Basta escrever para <a href="mailto:{{ site.contato_email }}">{{ site.contato_email }}</a>.{% else %}Basta falar com a gente pelo <a href="{{ site.linkedin }}">LinkedIn</a>.{% endif %}</p>
+  <h2>Links para outros sites</h2>
+  <p>Nossos textos citam as fontes de onde vieram as informações, com link. Esses sites têm as próprias políticas de privacidade, pelas quais não respondemos.</p>
+  <h2>Mudanças nesta política</h2>
+  <p>Se esta política mudar, a data no topo será atualizada.</p>
+</article>{% include "_sidebar.html" %}</div>
+{% endblock %}

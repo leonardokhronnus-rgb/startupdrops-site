@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block intro %}<section class="intro compact"><div class="wrap"><div><div class="eyebrow">ANUNCIE</div><h1>Fale com quem <em>toca empresas.</em></h1></div></div></section>{% endblock %}
+{% block main %}
+<div class="news-layout"><article class="article prose">
+  <p>O {{ site.name }} é lido por fundadores, investidores e executivos que acompanham o ecossistema todos os dias.</p>
+  <p><strong>Formatos:</strong> patrocínio do site, conteúdo de marca, destaque na newsletter e patrocínio de editoria ou do Deal da Semana. Valores sob consulta.</p>
+  <p><strong>Fale com a gente:</strong> <a href="mailto:{{ site.contato_email }}?subject=Quero%20anunciar%20no%20StartupDrops">{{ site.contato_email }}</a> ou <a href="https://wa.me/{{ site.whatsapp }}?text=Quero%20anunciar%20no%20StartupDrops" target="_blank" rel="noopener">WhatsApp {{ site.whatsapp_exibir }}</a>.</p>
+  <p><a class="btn-lime" href="https://wa.me/{{ site.whatsapp }}?text=Quero%20anunciar%20no%20StartupDrops" target="_blank" rel="noopener">CHAMAR NO WHATSAPP</a></p>
+  <h2 id="media-kit">Media Kit</h2>
+  <p><strong>Quem lê:</strong> fundadores e CEOs de startups e PMEs, investidores anjo e de venture capital, executivos de inovação e de M&A.</p>
+  <p><strong>Formatos disponíveis:</strong></p>
+  <ul>
+    <li><strong>Branded Content:</strong> matéria da sua marca, escrita no padrão do site, sinalizada como conteúdo de marca, com logo, link e chamada para ação.</li>
+    <li><strong>Destaque na home:</strong> o seu conteúdo na manchete ou nos cards principais por um período.</li>
+    <li><strong>Newsletter:</strong> espaço de destaque na edição enviada aos assinantes.</li>
+    <li><strong>Patrocínio de editoria ou do Deal da Semana:</strong> sua marca associada a uma seção fixa do site.</li>
+  </ul>
+  <p>Para receber o media kit completo, com números de audiência atualizados e tabela de valores, <a href="mailto:{{ site.contato_email }}?subject=Media%20Kit%20StartupDrops">peça por e-mail</a> ou <a href="https://wa.me/{{ site.whatsapp }}?text=Quero%20receber%20o%20media%20kit%20do%20StartupDrops" target="_blank" rel="noopener">pelo WhatsApp</a>.</p>
+</article>{% include "_sidebar.html" %}</div>
+{% endblock %}

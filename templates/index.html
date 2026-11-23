@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block main %}
+{% if destaque %}{% set d = destaque %}
+<section aria-label="Destaques">
+  <div class="cover-grid">
+    <article class="cover-main {% if d.imagem %}has-img{% endif %}">
+      {% if d.imagem %}<a href="{{ d.href }}" tabindex="-1" aria-hidden="true"><img class="cover-img" src="{{ d.img_full }}" alt="" fetchpriority="high" decoding="async"></a>{% else %}
+      <div class="cover-art" aria-hidden="true"><div class="news-sheet"><div class="bar"></div><div class="block">{{ d.simbolo }}</div><div class="line"></div><div class="line short"></div></div></div>{% endif %}
+      <div class="cover-body">
+        <span class="pill lime">● DESTAQUE DO DIA · {{ d.kicker | upper }}</span>
+        <h2><a href="{{ d.href }}">{{ d.titulo }}</a></h2>
+        {% if d.linha_fina %}<p>{{ d.linha_fina }}</p>{% endif %}
+        <div class="cover-foot"><div class="article-meta">POR {{ d.autor | upper }} <span style="padding:0 7px">•</span> {{ d.data_curta | upper }}</div></div>
+      </div>
+    </article>
+    <div class="cover-side">
+      {% for s in laterais %}
+      <a class="side-news {% if loop.index == 2 %}second{% endif %}" href="{{ s.href }}"><div><div class="eyebrow">{{ '%02d' % loop.index }} / {{ s.kicker | upper }}</div><h3>{{ s.titulo }}</h3>{% if s.linha_fina %}<p class="side-lead">{{ s.linha_fina }}</p>{% endif %}</div><div style="display:flex;justify-content:space-between;align-items:center"><span class="article-meta">{{ s.autor | upper }} · {{ s.data_curta | upper }}</span></div></a>
+      {% endfor %}
+    </div>
+  </div>
+  {% if d.na_pratica %}<div class="insight-strip"><span class="insight-icon">✳</span><div><b>INSIGHT DO DIA</b><p>{{ d.na_pratica }}</p></div></div>{% else %}<div style="height:46px"></div>{% endif %}
+</section>
+{% endif %}
+
+{% if deal %}
+<section class="deal {% if deal.imagem %}has-img{% endif %}">
+  {% if deal.imagem %}<a class="deal-img" href="{{ deal.href }}"><img src="{{ deal.thumb }}" loading="lazy" decoding="async" alt="{{ deal.credito_imagem }}"></a>{% endif %}
+  <div style="position:relative;z-index:1">
+    <span class="pill lime">$ DEAL DA SEMANA</span>
+    <h2><a href="{{ deal.href }}">{{ deal.titulo }}</a></h2>
+    {% if deal.linha_fina %}<p>{{ deal.linha_fina }}</p>{% endif %}
+  </div>
+  <div class="deal-nums">
+    {% if deal.valor and deal.valor != deal.valuation %}<div><small>Valor</small><b>{{ deal.valor }}</b></div>{% endif %}
+    {% if deal.valuation %}<div><small>Valuation</small><b>{{ deal.valuation }}</b></div>{% endif %}
+    <a class="btn-lime" href="{{ deal.href }}">LEITURA DE VALUATION</a>
+  </div>
+</section>
+{% endif %}
+
+<div class="news-layout">
+ <div class="main-col">
+  <section id="analises">
+    <div class="section-top"><div><span class="section-kicker">CURADORIA STARTUPDROPS</span><h2 class="section-title" style="margin-top:5px">Últimas <span>notícias.</span></h2></div></div>
+    <div class="filters">{% for k, ed in editorias.items() %}<a class="filter" href="/{{ k }}/">{{ ed.nome }}</a>{% endfor %}</div>
+    <div class="news-cards">{% for d in cards %}{% include "_card.html" %}{% endfor %}</div>
+    {% if arq_pages > 1 %}<div class="more-news"><span>Mais notícias</span>{% set pages = arq_pages %}{% set page = 0 %}{% set base = '/noticias/' %}{% include "_pager.html" %}</div>{% endif %}
+  </section>
+ </div>
+  {% include "_sidebar.html" %}
+</div>
+
+
+{% if patrocinados %}
+<section class="sponsored-row">
+  <div class="section-top"><div><span class="section-kicker">BRANDED CONTENT</span><h2 class="section-title" style="margin-top:5px">De quem <span>apoia o StartupDrops.</span></h2></div></div>
+  <div class="sponsored-grid">
+  {% for p in patrocinados %}
+  <article class="branded-card">
+    <a class="branded-card-img" href="{{ p.href }}" tabindex="-1" aria-hidden="true">{% if p.imagem %}<img src="{{ p.thumb }}" alt="" loading="lazy" decoding="async">{% else %}<span>{{ p.simbolo }}</span>{% endif %}</a>
+    <div class="branded-card-body">
+      <span class="pill lime">OFERECIDO POR {{ p.patrocinador | upper }}</span>
+      <h3><a href="{{ p.href }}">{{ p.titulo }}</a></h3>
+      {% if p.linha_fina %}<p>{{ p.linha_fina }}</p>{% endif %}
+      <a class="btn-lime" href="{{ p.href }}">LER AGORA</a>
+    </div>
+  </article>
+  {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="ad-cta">
+  <div><span class="ad-kicker">ANUNCIE CONOSCO</span><h2>Leve sua marca para quem decide negócios.</h2><p>Divulgue seu conteúdo na newsletter, patrocine uma editoria ou destaque-se no Deal da Semana.</p></div>
+  <a class="btn-lime" href="/anuncie/" data-umami-event="anuncie-home">QUERO ANUNCIAR</a>
+</section>
+
+{% if site.newsletter_action %}
+<section class="news-box" id="newsletter-home">
+  <h2>Fique por dentro</h2>
+  <p>O que um fundador precisa ler, direto no seu e-mail. Análises, tendências e oportunidades em capital, tecnologia e gestão. Sem spam.</p>
+  <form action="{{ site.newsletter_action }}" method="post" target="_blank" data-umami-event="newsletter-home"><input type="email" name="email" required placeholder="seu@email.com" aria-label="Seu e-mail"><button type="submit">ASSINAR</button></form>
+  <small>Ao assinar, você concorda com a <a href="/privacidade/">Política de Privacidade</a>. Cancele quando quiser.</small>
+</section>
+{% endif %}
+{% endblock %}

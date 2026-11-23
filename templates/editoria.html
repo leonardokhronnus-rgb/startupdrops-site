@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block desc %}{{ ed.descricao }}{% endblock %}
+{% block intro %}
+<section class="intro compact"><div class="wrap"><div><div class="eyebrow">EDITORIA</div><h1>{{ ed.nome }}<em>.</em></h1></div><p class="intro-desc">{{ ed.descricao }}</p></div></section>
+{% endblock %}
+{% block main %}
+<div class="news-layout">
+  <section>
+    {% if ed_slug == 'rodadas' %}
+      <div class="section-top"><div><span class="section-kicker">CAPITAL EM MOVIMENTO</span><h2 class="section-title" style="margin-top:5px">Todas as <span>rodadas.</span></h2></div><a class="section-more" href="/deal-da-semana/">DEAL DA SEMANA</a></div>
+      <div class="radar-list" style="grid-template-columns:1fr">{% for d in itens %}{% set n = loop.index + (page-1)*20 %}{% include "_radar.html" %}{% endfor %}</div>
+    {% else %}
+      <div class="news-cards">{% for d in itens %}{% include "_card.html" %}{% endfor %}</div>
+    {% endif %}
+    {% if not itens %}<p class="no-results" style="display:block">Nenhum drop nesta editoria ainda.</p>{% endif %}
+    {% include "_pager.html" %}
+  </section>
+  {% include "_sidebar.html" %}
+</div>
+{% endblock %}

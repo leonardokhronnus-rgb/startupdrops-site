@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+<meta name="description" content="{% block desc %}{{ site.tagline }}{% endblock %}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:description" content="{{ self.desc() }}">
+<meta property="og:type" content="{% block ogtype %}website{% endblock %}">
+<meta property="og:image" content="{{ site.url }}{% block ogimg %}/static/og/home.png{% endblock %}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+{% block og %}{% endblock %}
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+<link rel="icon" type="image/png" href="/static/img/favicon.png"><link rel="apple-touch-icon" href="/static/img/icon-180.png">
+</head>
+<body>
+<header class="header"><div class="wrap header-inner">
+  <a class="brand brand-stack" href="/" aria-label="{{ site.name }} início"><img class="brand-logo" src="/static/img/logo.png" alt="StartupDrops" width="205" height="56"><span class="brand-sub">O que um fundador precisa ler hoje.</span></a>
+  <nav class="mainnav" id="mainnav">
+    <a href="/" {% if active=='home' %}class="selected"{% endif %}>Início</a>
+    {% for k, ed in editorias.items() %}<a href="/{{ k }}/" {% if active==k %}class="selected"{% endif %}>{{ ed.nome }}</a>{% endfor %}
+    <a href="/educacao/" {% if active=='educacao' %}class="selected"{% endif %}>Educação</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="searchToggle" aria-label="Abrir busca" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+    <a class="nav-ad" href="/anuncie/">ANUNCIE</a>
+    {% if site.newsletter_action %}<a class="nav-cta" href="#newsletter">RECEBA AS NOTÍCIAS</a>{% endif %}
+    <button class="icon-btn mobile-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </div>
+</div>
+<div class="search-panel" id="searchPanel"><div class="wrap"><form action="/busca/" method="get"><input name="q" id="searchInput" type="search" placeholder="Buscar no StartupDrops..." aria-label="Buscar"></form></div></div>
+</header>
+{% if ticker %}
+<div class="ticker"><div class="wrap ticker-inner"><span class="ticker-label">NO RADAR</span><div class="ticker-track"><div class="ticker-move">
+  {% for rep in [1, 2] %}{% for t in ticker %}<a href="{{ t.href }}" {% if rep == 2 %}aria-hidden="true" tabindex="-1"{% endif %}><span>{{ t.titulo }}</span></a>{% endfor %}{% endfor %}
+</div></div></div></div>
+{% endif %}
+{% block intro %}{% endblock %}
+<main class="wrap content">{% block main %}{% endblock %}</main>
+<footer class="footer"><div class="wrap">
+  <div class="footer-content">
+    <div><img class="brand-logo" src="/static/img/logo.png" alt="StartupDrops" width="205" height="56"><p>{{ site.tagline }}</p></div>
+    <div class="footer-cols">
+      <div class="fcol"><h4>Editorias</h4>{% for k, ed in editorias.items() %}<a href="/{{ k }}/">{{ ed.nome }}</a>{% endfor %}<a href="/educacao/">Educação</a></div>
+      <div class="fcol"><h4>Institucional</h4><a href="/anuncie/">Anuncie Aqui</a><a href="/contato/">Fale Conosco</a><a href="/sobre/">Sobre Nós</a>{% if site.linkedin %}<a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}</div>
+      <div class="fcol"><h4>Contato</h4><a href="/contato/#pauta">Envie sua pauta</a><a href="/anuncie/#media-kit">Media Kit</a><a href="https://www.google.com/preferences/source?q={{ site.url | replace('https://','') | urlencode }}" target="_blank" rel="noopener" data-umami-event="google-fonte-preferida">Fonte preferida no Google</a><a href="/privacidade/">Privacidade</a><a href="/termos/">Termos de Uso</a><a href="/cookies/">Cookies</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© {{ year }} STARTUPDROPS · PUBLICADO PELA {{ site.responsavel | upper }} · CNPJ {{ site.cnpj }} · <a href="mailto:{{ site.contato_email }}">{{ site.contato_email | upper }}</a> · <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">WHATSAPP {{ site.whatsapp_exibir }}</a></span><a href="/feed.xml">RSS</a></div>
+</div></footer>
+<script>
+if('scrollRestoration' in history)history.scrollRestoration='manual';(()=>{const top=()=>{if(!location.hash){window.scrollTo(0,0);document.documentElement.scrollTop=0;document.body.scrollTop=0;}};top();addEventListener('DOMContentLoaded',top);addEventListener('load',()=>{top();setTimeout(top,60);setTimeout(top,300)});addEventListener('pageshow',top);})();
+(()=>{const m=document.getElementById('menuToggle'),n=document.getElementById('mainnav'),s=document.getElementById('searchToggle'),p=document.getElementById('searchPanel'),i=document.getElementById('searchInput');
+m.addEventListener('click',()=>{const o=n.classList.toggle('open');m.setAttribute('aria-expanded',o)});
+s.addEventListener('click',()=>{const o=p.classList.toggle('open');s.setAttribute('aria-expanded',o);if(o)i.focus()});})();
+</script>
+{% block scripts %}{% endblock %}
+{% if analytics.umami_website_id %}<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ analytics.umami_website_id }}"></script>{% endif %}
+{% if analytics.cloudflare_token %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ analytics.cloudflare_token }}"}'></script>{% endif %}
+{% if analytics.plausible_domain %}<script defer data-domain="{{ analytics.plausible_domain }}" src="https://plausible.io/js/script.js"></script>{% endif %}
+</body></html>

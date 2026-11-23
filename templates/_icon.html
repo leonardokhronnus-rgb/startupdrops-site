@@ -1,0 +1,10 @@
+{% macro icon(k) -%}
+<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+{%- if k == 'rodadas' %}<ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/>
+{%- elif k == 'modelos' %}<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>
+{%- elif k == 'economia' %}<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>
+{%- elif k == 'artigos' %}<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/>
+{%- elif k == 'educacao' %}<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+{%- elif k == 'deal' %}<path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+{%- endif %}</svg>
+{%- endmacro %}

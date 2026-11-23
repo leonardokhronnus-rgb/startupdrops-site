@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block intro %}<section class="intro compact"><div class="wrap"><div><div class="eyebrow">Institucional</div><h1>Termos de <em>uso.</em></h1></div><p class="intro-desc">As regras para usar o site e o conteúdo do {{ site.name }}.</p></div></section>{% endblock %}
+{% block main %}
+<div class="news-layout"><article class="article prose">
+  <p><em>Última atualização: {{ hoje }}.</em></p>
+  <h2>Quem somos</h2>
+  <p>O {{ site.name }} é publicado pela {{ site.responsavel }}, CNPJ {{ site.cnpj }}, {{ site.endereco }}. Ao usar o site, você concorda com estes termos.</p>
+  <h2>O conteúdo é informativo</h2>
+  <p>As matérias, análises e artigos têm caráter jornalístico e educativo. Nada aqui é recomendação de investimento, oferta de valores mobiliários ou consultoria jurídica, contábil ou financeira. Antes de decidir, procure um profissional.</p>
+  <h2>Fontes e precisão</h2>
+  <p>Indicamos a fonte de cada informação. Trabalhamos para publicar dados corretos, mas eles podem mudar depois da publicação. Se encontrar um erro, <a href="/contato/">fale com a gente</a>.</p>
+  <h2>Uso do conteúdo</h2>
+  <p>Os textos e imagens próprios do {{ site.name }} são protegidos por direito autoral. Você pode compartilhar o link e citar trechos curtos com crédito e link para a matéria. Para reproduzir o texto inteiro, peça autorização. Imagens de terceiros pertencem aos respectivos donos, indicados nos créditos.</p>
+  <h2>Branded content e anúncios</h2>
+  <p>Conteúdos pagos são sempre identificados como Branded Content, com a empresa responsável e eventuais vínculos com o {{ site.name }}. Eles não interferem na cobertura jornalística.</p>
+  <h2>Links externos</h2>
+  <p>Citamos e linkamos outros sites. Não respondemos pelo conteúdo nem pelas políticas deles.</p>
+  <h2>Newsletter</h2>
+  <p>A assinatura é gratuita e pode ser cancelada a qualquer momento pelo link presente em todo e-mail. O tratamento dos seus dados está na <a href="/privacidade/">Política de Privacidade</a>.</p>
+  <h2>Mudanças</h2>
+  <p>Podemos atualizar estes termos. A data no topo indica a última versão. Estes termos seguem a legislação brasileira, com foro na comarca do Rio de Janeiro (RJ).</p>
+</article>{% include "_sidebar.html" %}</div>
+{% endblock %}

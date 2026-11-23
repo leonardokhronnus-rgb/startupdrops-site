@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block intro %}<section class="intro compact"><div class="wrap"><div><div class="eyebrow">SOBRE</div><h1>O essencial do ecossistema, <em>todo dia.</em></h1></div></div></section>{% endblock %}
+{% block main %}
+<div class="news-layout"><article class="article prose">
+  <p>O {{ site.name }} existe para responder uma pergunta: o que um fundador precisa ler hoje?</p>
+  <p>Todo dia escolhemos, entre dezenas de veículos e publicações do Brasil e do mundo, o que muda alguma decisão de quem toca uma empresa, e escrevemos do nosso jeito, sempre com crédito e link para quem apurou.</p>
+  <ul>{% for k, ed in editorias.items() %}<li><strong>{{ ed.nome }}:</strong> {{ ed.descricao }}</li>{% endfor %}</ul>
+  <p>Viu algo errado ou tem uma pauta? Escreva para <a href="mailto:{{ site.contato_email }}">{{ site.contato_email }}</a> ou chame no <a href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener">WhatsApp {{ site.whatsapp_exibir }}</a>.</p>
+  <p>O {{ site.name }} é publicado pela {{ site.responsavel }}, CNPJ {{ site.cnpj }}.</p>
+</article>{% include "_sidebar.html" %}</div>
+{% endblock %}

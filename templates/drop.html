@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block desc %}{{ d.linha_fina or d.titulo }}{% endblock %}
+{% block ogtype %}article{% endblock %}
+{% block ogimg %}{{ d.og }}{% endblock %}
+{% block main %}
+<div class="news-layout">
+  <div>
+    <article class="article {% if d.patrocinado %}sponsored{% endif %}">
+      {% if d.patrocinado %}<div class="disclosure"><b>BRANDED CONTENT</b> · Oferecido por {{ d.patrocinador }}. {{ d.aviso }}</div>{% endif %}
+      {% if not d.patrocinado %}<div><span class="pill blue">{{ d.kicker | upper }}{% if d.setor %} · {{ d.setor | upper }}{% endif %}</span>{% if d.valor %}<span class="amount">{{ d.valor }}</span>{% endif %}</div>{% endif %}
+      <h1>{{ d.titulo }}</h1>
+      {% if d.linha_fina %}<p class="lead">{{ d.linha_fina }}</p>{% endif %}
+      <div class="meta-row"><div class="article-meta">POR {{ d.autor | upper }} · {{ d.data_longa | upper }}</div>{% set share_cls = "share-top" %}{% set share_label = "" %}{% set share_google = true %}{% include "_share.html" %}</div>
+      {% set vis_sizes = "(max-width:900px) 100vw, 760px" %}{% include "_visual.html" %}
+      {% if d.imagem and d.credito_imagem %}<div class="figcap">{{ d.credito_imagem }}</div>{% endif %}
+      {% if d.patrocinado and d.link_cta %}<p class="cta-inline">Oferecido por <b>{{ d.patrocinador }}</b> · <a href="{{ d.link_cta }}" target="_blank" rel="noopener sponsored" data-umami-event="cta-patrocinado-topo" data-umami-event-marca="{{ d.patrocinador }}">{{ d.site or d.link_cta }}</a></p>{% endif %}
+      <div class="prose">{{ d.corpo | safe }}</div>
+      {% if d.deal_da_semana or d.leitura_valuation %}
+      <div class="val-box"><span class="tag">{% if d.deal_da_semana %}$ DEAL DA SEMANA · {% endif %}LEITURA DE VALUATION</span>
+        <div class="val-nums">{% if d.valor and d.valor != d.valuation %}<div><small>Valor</small><b>{{ d.valor }}</b></div>{% endif %}{% if d.valuation %}<div><small>Valuation</small><b>{{ d.valuation }}</b></div>{% endif %}</div>
+        {% if d.leitura_valuation %}<p>{{ d.leitura_valuation }}</p>{% endif %}
+      </div>
+      {% endif %}
+      {% if d.na_pratica %}<div class="insight-strip"><span class="insight-icon">✳</span><div><b>INSIGHT</b><p>{{ d.na_pratica }}</p></div></div>{% endif %}
+      {% if d.empresas %}<div class="cos">{% for c in d.empresas %}<span>{{ c }}</span>{% endfor %}</div>{% endif %}
+      {% if d.patrocinado and d.link_cta %}<div class="cta-box">{% if d.logo %}<span class="cta-logo"><img src="{{ d.logo }}" alt="{{ d.patrocinador }}"></span>{% endif %}<div class="cta-txt"><b>{{ d.texto_cta }}</b><p>Conheça a {{ d.patrocinador }} em <a href="{{ d.link_cta }}" target="_blank" rel="noopener sponsored" data-umami-event="cta-patrocinado" data-umami-event-marca="{{ d.patrocinador }}">{{ d.site or d.link_cta }}</a></p></div><a class="btn-lime" href="{{ d.link_cta }}" target="_blank" rel="noopener sponsored" data-umami-event="cta-patrocinado" data-umami-event-marca="{{ d.patrocinador }}">FALE COM A {{ d.patrocinador | upper }}</a></div>{% endif %}
+      {% if d.fonte_html %}<div class="source">Com informações de {{ d.fonte_html | safe }}.</div>{% elif d.fonte %}<div class="source">Com informações de {% if d.link_fonte %}<a href="{{ d.link_fonte }}" target="_blank" rel="noopener nofollow" data-umami-event="fonte-original">{{ d.fonte }}</a>{% else %}{{ d.fonte }}{% endif %}.</div>{% endif %}
+      {% set share_cls = "share-end" %}{% set share_label = "Compartilhar essa notícia" %}{% set share_google = false %}{% include "_share.html" %}
+    </article>
+    {% include "_news_end.html" %}
+    {% if rel %}
+    <section class="related">
+      <div class="section-top"><div><span class="section-kicker">CONTINUE LENDO</span><h2 class="section-title" style="margin-top:5px">Mais em <span>{{ d.ed_nome }}.</span></h2></div><a class="section-more" href="/{{ d.editoria }}/">VER TUDO</a></div>
+      {% if d.editoria == 'rodadas' %}<div class="radar-list">{% for d in rel %}{% set n = loop.index %}{% include "_radar.html" %}{% endfor %}</div>
+      {% else %}<div class="news-cards">{% for d in rel[:3] %}{% include "_card.html" %}{% endfor %}</div>{% endif %}
+    </section>
+    {% endif %}
+  </div>
+  {% include "_sidebar.html" %}
+</div>
+{% endblock %}

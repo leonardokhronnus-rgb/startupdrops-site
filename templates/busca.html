@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block intro %}
+<section class="intro compact"><div class="wrap"><div><div class="eyebrow">BUSCA</div><h1>Encontre um <em>drop.</em></h1></div></div></section>
+{% endblock %}
+{% block main %}
+<div class="search-page">
+  <input id="q" type="search" placeholder="Digite uma empresa, fundo ou assunto..." autofocus>
+  <div class="radar-list" id="res" style="grid-template-columns:1fr"></div>
+  <p class="no-results" id="none">Nada encontrado.</p>
+</div>
+{% endblock %}
+{% block scripts %}
+<script>
+(async()=>{const q=document.getElementById('q'),res=document.getElementById('res'),none=document.getElementById('none');
+let data=[];try{data=await (await fetch('/busca.json')).json()}catch(e){}
+const norm=s=>(s||'').toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[̀-ͯ]/g,'');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function run(){const t=norm(q.value.trim());const hits=t?data.filter(d=>norm(d.t+' '+d.f+' '+d.k).includes(t)):data.slice(0,10);
+res.innerHTML=hits.map((d,i)=>`<a class="radar-entry" href="${esc(d.u)}"><span class="radar-num">${String(i+1).padStart(2,'0')}</span><div><span class="type">${esc(d.k)}</span><h3>${esc(d.t)}</h3><small>${esc(d.d.toUpperCase())}</small></div><span class="arr"></span></a>`).join('');
+none.style.display=hits.length?'none':'block';}
+q.value=new URLSearchParams(location.search).get('q')||'';q.addEventListener('input',run);run();})();
+</script>
+{% endblock %}

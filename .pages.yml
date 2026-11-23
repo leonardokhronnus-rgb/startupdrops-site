@@ -1,0 +1,179 @@
+# Painel de edição do StartupDrops (Pages CMS: https://app.pagescms.org)
+# Entre com a conta do GitHub, escolha o repositório startupdrops e edite por aqui.
+# Cada vez que você salva, o GitHub publica o site sozinho em cerca de 1 minuto.
+
+media:
+  input: static/img/drops
+  output: /static/img/drops
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: drops
+    label: Matérias e artigos
+    type: collection
+    path: content
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [titulo, editoria, data, posicao, rascunho]
+      primary: titulo
+      sort: [data, titulo]
+      default:
+        sort: data
+        order: desc
+    fields:
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+      - name: linha_fina
+        label: Linha fina (resumo de 1 ou 2 frases)
+        type: text
+      - name: editoria
+        label: Editoria
+        type: select
+        options:
+          values:
+            - { value: rodadas, label: "Deals" }
+            - { value: modelos, label: "Tendências" }
+            - { value: economia, label: "Economia" }
+            - { value: artigos, label: "Artigos" }
+      - name: formato
+        label: Formato (só para Artigos)
+        type: select
+        options:
+          values:
+            - { value: coluna, label: "Coluna" }
+            - { value: leitura, label: "Leitura da semana" }
+            - { value: playbook, label: "Playbook" }
+            - { value: dados, label: "Dados" }
+      - name: posicao
+        label: Posição na home (deixe vazio para seguir a data)
+        type: select
+        options:
+          values:
+            - { value: manchete, label: "Manchete" }
+            - { value: lateral-1, label: "Card lateral 1 (branco)" }
+            - { value: lateral-2, label: "Card lateral 2 (verde)" }
+            - { value: card-1, label: "Últimas notícias: 1º card" }
+            - { value: card-2, label: "Últimas notícias: 2º card" }
+            - { value: card-3, label: "Últimas notícias: 3º card" }
+      - name: data
+        label: Data e hora (AAAA-MM-DD HH:MM)
+        type: string
+        required: true
+      - name: autor
+        label: Autor (vazio = Redação StartupDrops)
+        type: string
+      - name: imagem
+        label: Imagem de capa (16:9)
+        type: image
+      - name: credito_imagem
+        label: Crédito da imagem (ex. Foto: Divulgação)
+        type: string
+      - name: setor
+        label: Etiqueta (setor da rodada ou tema do artigo; opcional)
+        type: string
+      - name: valor
+        label: Valor da rodada ou transação (ex. R$ 30 milhões)
+        type: string
+      - name: valuation
+        label: Valuation (se divulgado)
+        type: string
+      - name: deal_da_semana
+        label: É o Deal da Semana?
+        type: boolean
+      - name: leitura_valuation
+        label: Leitura de valuation (Deal da Semana)
+        type: text
+      - name: na_pratica
+        label: Insight (o que o fundador deve fazer)
+        type: text
+      - name: fonte
+        label: Fonte (quem apurou)
+        type: string
+      - name: link_fonte
+        label: Link da fonte original
+        type: string
+      - name: empresas
+        label: Empresas citadas
+        type: string
+        list: true
+      - name: simbolo
+        label: Texto do bloco quando não há imagem (ex. R$180M)
+        type: string
+      - name: rascunho
+        label: Rascunho (não publica)
+        type: boolean
+      - name: body
+        label: Texto (notícia + "## Por que importa?")
+        type: rich-text
+
+  - name: patrocinados
+    label: Branded Content (patrocinados)
+    type: collection
+    path: content/patrocinados
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [titulo, patrocinador, data, posicao]
+      primary: titulo
+    fields:
+      - name: patrocinado
+        label: Patrocinado (deixe marcado)
+        type: boolean
+        default: true
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+      - name: linha_fina
+        label: Linha fina
+        type: text
+      - name: patrocinador
+        label: Patrocinador
+        type: string
+        required: true
+      - name: autor
+        label: Assinatura (normalmente o nome do patrocinador)
+        type: string
+      - name: aviso
+        label: Aviso de transparência
+        type: string
+      - name: posicao
+        label: Posição na home (vazio = só no bloco de patrocinados)
+        type: select
+        options:
+          values:
+            - { value: manchete, label: "Manchete" }
+            - { value: lateral-1, label: "Card lateral 1" }
+            - { value: lateral-2, label: "Card lateral 2" }
+            - { value: card-1, label: "Últimas notícias: 1º card" }
+      - name: data
+        label: Data e hora (AAAA-MM-DD HH:MM)
+        type: string
+        required: true
+      - name: imagem
+        label: Imagem de capa (16:9)
+        type: image
+      - name: credito_imagem
+        label: Crédito da imagem
+        type: string
+      - name: logo
+        label: Logo do patrocinador (fundo transparente)
+        type: image
+      - name: site
+        label: Site exibido (ex. elevu.com.br)
+        type: string
+      - name: link_cta
+        label: Link do botão
+        type: string
+      - name: texto_cta
+        label: Frase do quadro final
+        type: string
+      - name: simbolo
+        label: Texto do bloco quando não há imagem
+        type: string
+      - name: body
+        label: Texto
+        type: rich-text

@@ -1,0 +1,4 @@
+_site/
+__pycache__/
+_previa/
+.previa_publicada.json

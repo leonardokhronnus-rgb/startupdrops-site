@@ -1,0 +1,18 @@
+{% from "_icon.html" import icon %}
+<aside class="sidebar">
+  <div class="side-section"><h3 class="side-heading">Explore por tema <span style="color:var(--blue)">✳</span></h3>
+    <div class="topic-tags">{% for k, ed in editorias.items() %}<a href="/{{ k }}/" {% if active==k %}class="on"{% endif %}>{{ icon(k) }} {{ ed.nome }}</a>{% endfor %}<a href="/educacao/" {% if active=='educacao' %}class="on"{% endif %}>{{ icon('educacao') }} Educação</a><a href="/deal-da-semana/">{{ icon('deal') }} Deal da Semana</a></div>
+  </div>
+  {% if artigos_side %}
+  <div class="side-section"><h3 class="side-heading">Artigos</h3>
+    {% for a in artigos_side %}<a class="coluna-mini" href="{{ a.href }}"><small>{{ a.autor }}</small><strong>{{ a.titulo }}</strong></a>{% endfor %}
+    <a class="side-more" href="/artigos/">Ver todos os artigos</a>
+  </div>
+  {% endif %}
+  {% if site.newsletter_action %}
+  <div class="side-section sidebar-signup" id="newsletter"><span class="tag">✳ NEWSLETTER GRATUITA</span><h3>Menos ruído.<br>Mais decisão.</h3><p>O essencial do ecossistema e o que ele significa para quem empreende.</p>
+    <form action="{{ site.newsletter_action }}" method="post" target="_blank"><input type="email" name="email" aria-label="Seu e-mail" required placeholder="Seu melhor e-mail"><button type="submit">QUERO RECEBER</button></form>
+    <p class="signup-note">Ao assinar, você concorda com a <a href="/privacidade/" style="text-decoration:underline">Política de Privacidade</a>. Cancele quando quiser.</p>
+  </div>
+  {% endif %}
+</aside>
