@@ -1,5 +1,5 @@
 ---
-titulo: "Só 10% das empresas de fundador chegam a US$ 10 bilhões. O que trava as outras?"
+titulo: "Só 10% das empresas lideradas pelo fundador chegam a US$ 10 bilhões. O que trava as outras?"
 linha_fina: A McKinsey analisou mais de 2.700 empresas lideradas por fundadores. O motivo raramente é o produto. Na maioria dos casos, é o fundador que não muda de papel quando a empresa cresce.
 editoria: artigos
 formato: leitura
