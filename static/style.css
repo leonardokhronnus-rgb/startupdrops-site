@@ -263,3 +263,6 @@ section .pager-num{margin-top:22px}
 @media(max-width:900px){.footer-cols{flex-wrap:wrap;gap:28px}}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}.contact-card{border:1px solid var(--border);border-radius:10px;padding:20px;background:#f6f8fe}.contact-card h3{margin:0 0 8px;font:700 18px var(--display)}.contact-card p{margin:0 0 12px}@media(max-width:650px){.contact-grid{grid-template-columns:1fr}}
 .visual.has-photo{background:#dfe5f3}.visual.has-photo:after{display:none}
+/* capa com imagem no tablet/celular: sem altura mínima (evita sobra azul) */
+@media(max-width:1180px){.cover-main.has-img{min-height:0}}
+@media(max-width:650px){.cover-main.has-img .cover-img{aspect-ratio:2/1}.cover-main.has-img .cover-body{padding:20px 22px 24px}}
