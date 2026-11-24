@@ -8,9 +8,9 @@ Lê newsletter/edicao-NN.md (escrito no mesmo formato da edição 01) e gera:
   - newsletter/edicao-NN-CODIGO.txt             (HTML colorido para colar no Buttondown, modo Markdown)
 
 Regras de design aprovadas pelo Leonardo:
-  - Etiquetas de seção e botões em azul #0131cd com texto branco (nada de verde nos botões/etiquetas).
+  - Etiquetas de seção em verde-limão #b9fc01 com texto azul-marinho.
+  - Botões em azul #0131cd com texto branco (nunca botão verde).
   - Nas notícias: título clicável + "Ler mais →" em texto. Botão só em "Leitura da semana" e "Deal da semana".
-  - Verde-limão só no banner.
 """
 import html
 import re
@@ -72,8 +72,8 @@ def btn(text: str, url: str) -> str:
 
 def label(t: str) -> str:
     return (f'<table role="presentation" cellpadding="0" cellspacing="0" style="margin:34px 0 16px;"><tr>'
-            f'<td bgcolor="{BLUE}" style="background:{BLUE};border-radius:6px;padding:6px 12px;{F}font-size:12px;'
-            f'font-weight:bold;letter-spacing:1.5px;color:#ffffff;text-transform:uppercase;">{html.escape(t)}</td></tr></table>')
+            f'<td bgcolor="{LIME}" style="background:{LIME};border-radius:6px;padding:6px 12px;{F}font-size:12px;'
+            f'font-weight:bold;letter-spacing:1.5px;color:{NAVY};text-transform:uppercase;">{html.escape(t)}</td></tr></table>')
 
 
 def gerar_html(md: str, n: int) -> str:
