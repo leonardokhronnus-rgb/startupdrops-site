@@ -2,8 +2,8 @@
 
 SITE = {
     "name": "StartupDrops",
-    "slogan": "O essencial do ecossistema, todo dia",
-    "tagline": "O que um fundador precisa ler: rodadas, modelos de negócio, economia e as melhores ideias do mundo, com a leitura de quem vive o mercado.",
+    "slogan": "Não basta saber o que aconteceu. Entenda o que muda para você",
+    "tagline": "Não basta saber o que aconteceu. Aqui você entende o que muda para o seu negócio: rodadas, aquisições, economia e as melhores ideias do mundo, com a leitura de quem vive o mercado.",
     "url": "https://startupdrops.com.br",   # troque quando o domínio estiver apontado
     "linkedin": "",
     "instagram": "",

@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% block intro %}<section class="intro compact"><div class="wrap"><div><div class="eyebrow">SOBRE</div><h1>O essencial do ecossistema, <em>todo dia.</em></h1></div></div></section>{% endblock %}
+{% block intro %}<section class="intro compact"><div class="wrap"><div><div class="eyebrow">SOBRE</div><h1>Não basta saber o que aconteceu. <em>Entenda o que muda para você.</em></h1></div></div></section>{% endblock %}
 {% block main %}
 <div class="news-layout"><article class="article prose">
-  <p>O {{ site.name }} existe para responder uma pergunta: o que um fundador precisa ler hoje?</p>
+  <p>Saber que uma empresa captou milhões não muda nada na sua vida. Entender por que ela captou, o que isso diz sobre o mercado e o que você deveria fazer diferente, muda. O {{ site.name }} existe para isso: cada notícia vem com a leitura de quem vive o mercado e com o que ela significa, na prática, para quem toca uma empresa.</p>
   <p>Todo dia escolhemos, entre dezenas de veículos e publicações do Brasil e do mundo, o que muda alguma decisão de quem toca uma empresa, e escrevemos do nosso jeito, sempre com crédito e link para quem apurou.</p>
   <ul>{% for k, ed in editorias.items() %}<li><strong>{{ ed.nome }}:</strong> {{ ed.descricao }}</li>{% endfor %}</ul>
   <p>Viu algo errado ou tem uma pauta? Escreva para <a href="mailto:{{ site.redacao_email }}">{{ site.redacao_email }}</a>.</p>
