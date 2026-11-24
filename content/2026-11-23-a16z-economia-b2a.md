@@ -6,7 +6,6 @@ formato: leitura
 data: 2026-11-23 19:10
 setor: 7 min de leitura
 simbolo: B2A
-posicao: lateral-2
 fonte: a16z (Olivia Moore e Justine Moore)
 link_fonte: https://a16z.com/welcome-to-the-b2a-economy/
 empresas: [a16z, Shopify, OpenAI, Stripe, GitHub, Mercado Livre, iFood]
