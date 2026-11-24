@@ -2,6 +2,7 @@
 titulo: Sierra, de agentes de atendimento com IA, capta US$ 1,75 bilhão e dobra de valor em seis meses
 linha_fina: A empresa de Bret Taylor, ex-co-CEO da Salesforce e presidente do conselho da OpenAI, passou a valer US$ 30 bilhões. A receita anualizada saiu de US$ 150 milhões em fevereiro para mais de US$ 400 milhões em outubro.
 editoria: rodadas
+destaque: true
 data: 2026-11-24 15:45
 setor: Inteligência artificial
 pais: EUA

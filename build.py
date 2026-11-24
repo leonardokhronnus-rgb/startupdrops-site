@@ -192,7 +192,7 @@ def load_drops():
             "texto_cta": meta.get("texto_cta") or "Saiba mais",
             "site": meta.get("site") or "",
             "logo": meta.get("logo") or "",
-            "posicao": "manchete" if meta.get("destaque") else str(meta.get("posicao") or "").strip().lower(),
+            "posicao": str(meta.get("posicao") or "").strip().lower(),
             "corpo": markdown.markdown(m.group(2).strip(), extensions=["extra", "sane_lists"]),
         }
         # A linha "Com informações de" aparece uma vez só, no rodapé da matéria.
@@ -299,23 +299,19 @@ def main():
     todos_home = drops + patrocinados
     fixo = {d["posicao"]: d for d in sorted(todos_home, key=lambda d: d["dt"]) if d["posicao"]}
     deal = next((d for d in deals_semana if d["deal_atual"]), deals_semana[0] if deals_semana else None)
-    # Regra da capa:
-    #   destaque = artigo mais recente; card branco (lateral-1) = Tendência mais recente;
-    #   card verde (lateral-2) = segundo artigo mais recente.
-    #   Segurança: se o artigo mais recente tiver mais de 3 dias, a Tendência sobe para o destaque
-    #   e o card branco passa a ser a notícia mais recente que não seja Deal nem Economia.
-    def _naive(dt):
-        return dt.replace(tzinfo=None) if getattr(dt, "tzinfo", None) else dt
-    agora = datetime.now(BRT).replace(tzinfo=None)
-    artigos_home = [d for d in drops if d["editoria"] == "artigos"]
-    tend_home = [d for d in drops if d["editoria"] == "modelos"]
-    art_fresco = bool(artigos_home) and (agora - _naive(artigos_home[0]["dt"])) <= timedelta(days=3)
+    # Regra da capa (muda todo dia):
+    #   destaque = notícia do dia mais recente marcada com "destaque: true"; sem marcação, a notícia
+    #   mais nova desse dia que tenha imagem. Card branco (lateral-1) = a notícia seguinte do mesmo dia.
+    #   Card verde (lateral-2) = "Leitura da semana", fixada com "posicao: lateral-2" (troca semanal).
+    #   Deal da semana = "deal_atual: true" (troca semanal). Patrocinado com "posicao" sempre vence.
+    noticias = [d for d in drops if d["editoria"] != "artigos"]
+    ultimo_dia = noticias[0]["dt"].date() if noticias else None
+    do_dia = [d for d in noticias if d["dt"].date() == ultimo_dia and d is not deal]
     if fixo.get("manchete"):
         destaque = fixo["manchete"]
-    elif art_fresco:
-        destaque = artigos_home[0]
     else:
-        destaque = tend_home[0] if tend_home else (artigos_home[0] if artigos_home else None)
+        destaque = next((d for d in do_dia if d["destaque"]), None) or \
+                   next((d for d in do_dia if d.get("imagem")), None) or (do_dia[0] if do_dia else None)
     usados = {id(destaque), id(deal)} | {id(d) for d in fixo.values()}
     livres = [d for d in drops if id(d) not in usados]
     def preencher(prefixo, n, pool):
@@ -327,8 +323,7 @@ def main():
             if d:
                 out.append(d)
         return out
-    pool_lat1 = [d for d in livres if d["editoria"] == "modelos"] or \
-                [d for d in livres if d["editoria"] not in ("rodadas", "artigos", "economia")]
+    pool_lat1 = [d for d in livres if d["editoria"] != "artigos"]
     lat1 = preencher("lateral", 1, pool_lat1)
     lat2 = fixo.get("lateral-2") or next((d for d in livres if d["editoria"] == "artigos" and d not in lat1), None)
     laterais = lat1 + ([lat2] if lat2 else [])

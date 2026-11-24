@@ -6,7 +6,6 @@ formato: leitura
 data: 2026-11-24 15:50
 setor: 7 min de leitura
 simbolo: Preço
-posicao: lateral-2
 fonte: Bessemer Venture Partners, Bain & Company, EQT, Growth Unhinged e Activant Capital
 link_fonte: https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook
 empresas: [Sierra, Intercom, HubSpot, Salesforce, ServiceNow, SAP, Bessemer, Bain]

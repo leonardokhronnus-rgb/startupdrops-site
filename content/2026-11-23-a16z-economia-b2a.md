@@ -3,6 +3,7 @@ titulo: "Seu próximo cliente pode ser um robô: a economia B2A chegou"
 linha_fina: Para a a16z, os agentes de IA estão virando os principais usuários da internet e vão decidir onde o dinheiro é gasto. O que muda para quem vende no Brasil, do Mercado Livre ao Pix.
 editoria: artigos
 formato: leitura
+posicao: lateral-2
 data: 2026-11-23 19:10
 setor: 7 min de leitura
 simbolo: B2A
