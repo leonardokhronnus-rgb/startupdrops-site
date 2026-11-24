@@ -266,3 +266,4 @@ section .pager-num{margin-top:22px}
 /* capa com imagem no tablet/celular: sem altura mínima (evita sobra azul) */
 @media(max-width:1180px){.cover-main.has-img{min-height:0}}
 @media(max-width:650px){.cover-main.has-img .cover-img{aspect-ratio:2/1}.cover-main.has-img .cover-body{padding:20px 22px 24px}}
+.news-ok{background:#B9FC01;color:#0B1530;border-radius:12px;padding:14px 16px;font-size:15px;line-height:1.45;margin:8px 0}

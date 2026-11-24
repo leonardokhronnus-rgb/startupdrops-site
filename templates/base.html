@@ -63,4 +63,15 @@ s.addEventListener('click',()=>{const o=p.classList.toggle('open');s.setAttribut
 {% if analytics.umami_website_id %}<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ analytics.umami_website_id }}"></script>{% endif %}
 {% if analytics.cloudflare_token %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ analytics.cloudflare_token }}"}'></script>{% endif %}
 {% if analytics.plausible_domain %}<script defer data-domain="{{ analytics.plausible_domain }}" src="https://plausible.io/js/script.js"></script>{% endif %}
+{% if site.newsletter_action %}<script>
+document.querySelectorAll('form[action="{{ site.newsletter_action }}"]').forEach(function(f){
+  f.addEventListener('submit',function(){
+    setTimeout(function(){
+      var m=document.createElement('p');m.className='news-ok';
+      m.innerHTML='<strong>Quase lá!</strong> Enviamos um e-mail de confirmação. Clique no botão dentro dele para começar a receber. Não achou? Olhe em Promoções ou Spam.';
+      f.replaceWith(m);
+    },300);
+  });
+});
+</script>{% endif %}
 </body></html>
