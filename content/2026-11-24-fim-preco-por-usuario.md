@@ -11,6 +11,8 @@ fonte: Bessemer Venture Partners, Bain & Company, EQT, Growth Unhinged e Activan
 link_fonte: https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook
 empresas: [Sierra, Intercom, HubSpot, Salesforce, ServiceNow, SAP, Bessemer, Bain]
 na_pratica: "Responda a uma pergunta: o que o seu cliente realmente compra de você? Se for um resultado mensurável, como um atendimento resolvido, um lead qualificado ou uma nota emitida, teste cobrar uma taxa fixa menor mais um valor por resultado em um grupo pequeno de clientes novos. Antes, calcule o custo de entregar cada resultado, incluindo a conta de IA, para não descobrir depois que vende com prejuízo."
+imagem: /static/img/drops/2026-11-24-fim-preco-por-usuario.jpg
+credito_imagem: "Ilustração StartupDrops"
 ---
 Por 20 anos, o software para empresas teve uma regra simples de preço: cobrar por usuário. Cada pessoa que usa a ferramenta paga uma licença, a famosa cobrança por assento. O modelo funcionou porque o valor do software crescia junto com o número de pessoas usando, e porque era fácil de prever. O cliente sabia quanto ia gastar e o fornecedor sabia quanto ia receber.
 

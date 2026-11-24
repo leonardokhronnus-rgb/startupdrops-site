@@ -10,6 +10,8 @@ fonte: Exame e 100 Open Startups
 link_fonte: https://exame.com/negocios/conheca-as-20-melhores-startups-do-brasil-no-ranking-100-open-startups-2026/
 empresas: [100 Open Startups, Petrobras, Vale, Gerdau, Natura, Vivo, B3, Raízen, Sicredi, ArcelorMittal, Novo Nordisk]
 na_pratica: "Se você vende para empresas grandes, este é o canal mais previsível do momento: o contrato médio subiu para mais de US$ 200 mil e quase metade dos acordos é renovada. Comece com uma prova de conceito pequena e bem medida, tenha um patrocinador interno na área de negócio, e não só na de inovação, e registre os contratos no ranking. Aparecer na lista funciona como referência na próxima venda."
+imagem: /static/img/drops/2026-11-24-ranking-100-open-startups.jpg
+credito_imagem: "Imagem: Divulgação/100 Open Startups"
 ---
 O Ranking 100 Open Startups, que mede os negócios fechados entre startups e grandes empresas no Brasil, chegou à 11ª edição com o maior volume da sua história. Entre julho de 2025 e junho de 2026, foram R$ 18,5 bilhões em contratos, alta de 9,5% sobre o ciclo anterior. Desde 2016, o acumulado é de R$ 30,9 bilhões.
 

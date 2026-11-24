@@ -11,6 +11,8 @@ fonte: Startups e Portal ERP
 link_fonte: https://startups.com.br/negocios/zippy-capta-pre-seed-e-aposta-em-ia-para-proteger-criancas-na-internet/
 empresas: [Zippy, Alexia Ventures, Oracle]
 na_pratica: "Repare no plano de distribuição: vender direto para o consumidor é caro, então a Zippy quer chegar às famílias pelas empresas que já falam com elas, como bancos, operadoras e seguradoras. Se o seu produto é para pessoas físicas, faça a lista de quem já tem a confiança do seu cliente e poderia oferecer o seu produto como benefício. Um contrato desses pode valer mais do que um ano de anúncios."
+imagem: /static/img/drops/2026-11-24-zippy-pre-seed.jpg
+credito_imagem: "Foto: Divulgação/Zippy"
 ---
 A Zippy, startup brasileira de proteção infantil na internet, captou US$ 490 mil em uma rodada pré-seed, a um valuation de US$ 6,5 milhões. A rodada foi liderada pela investidora-anjo Müge Nallar Bouillon, com US$ 250 mil. A Alexia Ventures colocou US$ 150 mil, e outros dois investidores-anjo completaram com US$ 90 mil.
 

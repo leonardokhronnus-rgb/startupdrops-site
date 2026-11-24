@@ -10,6 +10,8 @@ fonte: Diego Barreto (LinkedIn) e My2Cents
 link_fonte: https://www.my2cents.ai/pt-br/news/2026-11-24-brasil/
 empresas: [iFood, Zoop]
 na_pratica: "Olhe a sua fatura de IA e separe as tarefas em dois grupos: as que exigem o melhor modelo do mercado e as rotineiras, como resumir, classificar, extrair dados e responder dúvidas simples. As rotineiras quase sempre rodam bem em modelos abertos ou mais baratos. Defina um modelo padrão barato para todos e deixe o modelo caro para tarefas justificadas, com orçamento próprio."
+imagem: /static/img/drops/2026-11-24-ifood-zoop-ia-open-source.jpg
+credito_imagem: "Foto: Divulgação/iFood"
 ---
 O CEO do iFood, Diego Barreto, contou no LinkedIn como a Zoop, empresa de infraestrutura financeira do grupo, lidou com a explosão do uso de inteligência artificial. Desde janeiro, o uso de IA na empresa cresceu 30 vezes. Desde junho, o consumo de tokens, a unidade em que os modelos cobram, subiu 106%. Mesmo assim, a conta mensal caiu 51%, e o custo por token ficou 86% menor do que no começo do ano.
 

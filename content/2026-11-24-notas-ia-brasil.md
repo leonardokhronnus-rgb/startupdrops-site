@@ -10,6 +10,8 @@ fonte: My2Cents, Let's Money e TV SIM Brasil
 link_fonte: https://www.my2cents.ai/pt-br/news/2026-11-24-brasil/
 empresas: [Questum, Iniciador, Cubo Itaú, AMZ AI Robotics, Grupo Realms]
 na_pratica: "Se você pensa em vender a sua empresa de software nos próximos anos, leia a nota da Questum com atenção. Os compradores estão pagando por integração profunda no processo do cliente e por dados próprios, e evitando software genérico que faz uma coisa só. Vale começar já a construir esses dois ativos, porque eles pesam na hora do valuation."
+imagem: /static/img/drops/2026-11-24-notas-ia-brasil.jpg
+credito_imagem: "Ilustração StartupDrops"
 ---
 **Compradores mudam de alvo.** No Buy-Side Report 2026, a Questum ouviu compradores de empresas de tecnologia no Brasil, e 17 de 18 disseram ter mudado suas listas de alvos por causa da inteligência artificial. Softwares genéricos e de função única perderam prioridade. Ganharam espaço empresas profundamente integradas aos processos do cliente e com dados próprios, ativos que a IA tem mais dificuldade de substituir.
 

@@ -11,6 +11,8 @@ fonte: Tech Startups, SCommerce, The Information e TechCrunch
 link_fonte: https://techstartups.com/2026/11/24/startup-funding-news-today-november-24-2026-sierra-marlowe-embo-more/
 empresas: [Sierra, Greenoaks, Lightspeed, Benchmark, Sequoia, GV, Tiger Global]
 na_pratica: "O atendimento ao cliente foi a primeira área em que agentes de IA viraram receita de verdade. Se a sua empresa tem um time grande de atendimento, já dá para testar um agente nas perguntas mais repetidas e medir quantos atendimentos ele resolve sozinho. Se você vende serviços, prepare-se: o cliente vai começar a comparar o seu preço com o de um agente que cobra por atendimento resolvido."
+imagem: /static/img/drops/2026-11-24-sierra-serie-f.jpg
+credito_imagem: "Foto: Divulgação/Sierra"
 ---
 A Sierra, empresa americana que cria agentes de inteligência artificial para atendimento ao cliente, anunciou uma rodada série F de US$ 1,75 bilhão, a um valuation de US$ 30 bilhões. A rodada foi liderada pela Greenoaks e pela Lightspeed, com participação de Benchmark, Sequoia, GV e Tiger Global.
 
