@@ -21,7 +21,7 @@
         {% if d.leitura_valuation %}<p>{{ d.leitura_valuation }}</p>{% endif %}
       </div>
       {% endif %}
-      {% if d.na_pratica %}<div class="insight-strip"><span class="insight-icon">✳</span><div><b>INSIGHT</b><p>{{ d.na_pratica }}</p></div></div>{% endif %}
+      {% if d.na_pratica %}<div class="insight-strip"><span class="insight-icon">✳︎</span><div><b>INSIGHT</b><p>{{ d.na_pratica }}</p></div></div>{% endif %}
       {% if d.empresas %}<div class="cos">{% for c in d.empresas %}<span>{{ c }}</span>{% endfor %}</div>{% endif %}
       {% if d.patrocinado and d.link_cta %}<div class="cta-box">{% if d.logo %}<span class="cta-logo"><img src="{{ d.logo }}" alt="{{ d.patrocinador }}"></span>{% endif %}<div class="cta-txt"><b>{{ d.texto_cta }}</b><p>Conheça a {{ d.patrocinador }} em <a href="{{ d.link_cta }}" target="_blank" rel="noopener sponsored" data-umami-event="cta-patrocinado" data-umami-event-marca="{{ d.patrocinador }}">{{ d.site or d.link_cta }}</a></p></div><a class="btn-lime" href="{{ d.link_cta }}" target="_blank" rel="noopener sponsored" data-umami-event="cta-patrocinado" data-umami-event-marca="{{ d.patrocinador }}">FALE COM A {{ d.patrocinador | upper }}</a></div>{% endif %}
       {% if d.fonte_html %}<div class="source">Com informações de {{ d.fonte_html | safe }}.</div>{% elif d.fonte %}<div class="source">Com informações de {% if d.link_fonte %}<a href="{{ d.link_fonte }}" target="_blank" rel="noopener nofollow" data-umami-event="fonte-original">{{ d.fonte }}</a>{% else %}{{ d.fonte }}{% endif %}.</div>{% endif %}
