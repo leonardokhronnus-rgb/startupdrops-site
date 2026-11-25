@@ -255,12 +255,12 @@ def main():
         src = ROOT / d["imagem"].lstrip("/") if d["imagem"] and d["imagem"].startswith("/static/") else None
         if src and src.exists():
             stem = src.stem
-            for largura, campo in ((720, "thumb"), (1400, "img_full")):
+            for largura, campo, qualidade in ((720, "thumb", 80), (1400, "img_full", 90)):
                 alvo = webdir / f"{stem}-{largura}.webp"
                 im = _Img.open(src).convert("RGB")
                 if im.width > largura:
                     im = im.resize((largura, round(im.height * largura / im.width)), _Img.LANCZOS)
-                im.save(alvo, "WEBP", quality=78, method=5)
+                im.save(alvo, "WEBP", quality=qualidade, method=6)
                 d[campo] = f"/static/img/web/{alvo.name}"
     for d in todos:
         d["og"] = d["imagem"] or f"/static/og/{d['slug']}.png"
