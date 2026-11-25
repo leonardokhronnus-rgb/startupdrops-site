@@ -13,7 +13,7 @@ link_fonte: https://neofeed.com.br/startups/kaszek-capta-us-650-milhoes-de-olho-
 empresas: [Kaszek, Nubank, QuintoAndar, Creditas, Kavak, Nuvemshop, Wellhub]
 na_pratica: "Se você está montando uma rodada pré-seed, seed ou série A, a Kaszek acabou de ganhar munição para os próximos três anos, e metade do dinheiro vai para empresas novas. Antes de chamar, veja o que ela disse que procura: aplicações de IA para empresas ou consumidores, ou infraestrutura de IA, como data center, energia e conectividade. Se a sua empresa não conversa com nenhum desses temas, a chance cai. E lembre que um bom investidor no seed muda muito a sua chance de chegar à série A, como mostra o artigo de hoje."
 imagem: /static/img/drops/2026-11-25-kaszek-fundo-vii.jpg
-credito_imagem: "Foto: Reprodução"
+credito_imagem: "Foto: Divulgação/Kaszek"
 ---
 A Kaszek, uma das maiores gestoras de venture capital da América Latina, anunciou na terça-feira (24) que fechou a captação do Kaszek Ventures VII, seu sétimo fundo de early stage, com US$ 650 milhões. A meta inicial era de US$ 600 milhões. Segundo a gestora, a procura dos investidores foi bem maior que o valor captado, mas ela decidiu limitar o fundo para manter o tamanho alinhado com a estratégia.
 
