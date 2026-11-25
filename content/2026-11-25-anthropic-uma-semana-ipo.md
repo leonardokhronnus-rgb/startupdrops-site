@@ -12,7 +12,7 @@ link_fonte: https://investnews.com.br/negocios/acoes-da-anthropic-sobem-34-apos-
 empresas: [Anthropic, SpaceX, OpenAI, Goldman Sachs, Morgan Stanley, Amazon, Google]
 na_pratica: "IPO grande que dá certo devolve dinheiro aos fundos, e fundo com dinheiro de volta investe de novo. Esse efeito leva meses para chegar ao early stage, mas chega. Se você planeja captar em 2027, use o começo do ano para arrumar números e narrativa. E não conte com o efeito para qualquer empresa: o dinheiro tende a ir primeiro para quem tem IA no centro do produto, não como enfeite."
 imagem: /static/img/drops/2026-11-25-anthropic-uma-semana-ipo.jpg
-credito_imagem: "Foto: Divulgação/Nasdaq"
+credito_imagem: "Foto: Divulgação/Anthropic"
 ---
 Na quinta-feira passada, 19 de novembro, a Anthropic, criadora do assistente Claude, estreou na Nasdaq sob o código ANT. O IPO foi precificado a US$ 83 por ação e levantou US$ 81,3 bilhões, a maior oferta pública inicial da história, acima da SpaceX, que abriu capital em junho. Somando uma colocação privada de US$ 26 bilhões com empresas como Nvidia, Google, Microsoft e AMD, a operação chegou a US$ 107,3 bilhões.
 
