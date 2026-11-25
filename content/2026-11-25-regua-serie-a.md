@@ -9,7 +9,7 @@ simbolo: Série A
 fonte: The Founders Corner (Chris Tottman), com dados de Carta, Dealroom e Antler
 link_fonte: https://www.the-founders-corner.com/p/the-series-a-number-nobody-publishes
 empresas: [Carta, Dealroom, Antler, Uncork Capital, Peak XV, Kaszek]
-na_pratica: "Faça a conta hoje numa planilha: =NPER(crescimento mensal; 0; -receita atual; receita alvo) mostra quantos meses faltam para a régua. Compare com o seu caixa dividido pela queima mensal. Se os meses até a régua passam do seu caixa menos seis meses, você tem três saídas: crescer mais rápido, gastar menos ou captar uma ponte agora, enquanto ainda tem poder de negociação. E, antes de assinar o próximo seed, pergunte ao investidor quantas das empresas dele chegaram à série A."
+na_pratica: "Faça a conta hoje: meses até a régua = ln(receita alvo ÷ receita atual) ÷ ln(1 + crescimento mensal). Numa planilha, use a função LN, ou =NPER(crescimento mensal; 0; -receita atual; receita alvo). Compare com o seu caixa dividido pela queima mensal. Se os meses até a régua passam do seu caixa menos seis meses, você tem três saídas: crescer mais rápido, gastar menos ou captar uma ponte agora, enquanto ainda tem poder de negociação. E, antes de assinar o próximo seed, pergunte ao investidor quantas das empresas dele chegaram à série A."
 imagem: /static/img/drops/2026-11-25-regua-serie-a.jpg
 credito_imagem: "Ilustração StartupDrops"
 ---
@@ -65,15 +65,15 @@ Parte dessa diferença é seleção: os melhores fundos veem as melhores empresa
 
 ## 6. A conta que todo fundador deveria fazer hoje
 
-A parte mais útil do artigo é uma conta simples para saber se o seu caixa chega à régua. Não precisa saber matemática: numa planilha do Excel ou do Google Sheets, digite
+A parte mais útil do artigo é uma fórmula simples para saber se o seu caixa chega à régua:
 
-**=NPER(crescimento mensal; 0; -receita atual; receita alvo)**
+**Meses até a régua = ln(receita alvo ÷ receita atual) ÷ ln(1 + crescimento mensal)**
 
-e o resultado é o número de meses até a régua. A função NPER calcula quantos períodos um valor leva para chegar a outro, crescendo a uma taxa fixa.
+O "ln" é o logaritmo natural, que qualquer planilha calcula com a função LN. Se preferir não lidar com ele, a função NPER do Excel ou do Google Sheets dá o mesmo resultado: =NPER(crescimento mensal; 0; -receita atual; receita alvo).
 
 Para fazer de cabeça, use a regra do 72: divida 72 pelo crescimento mensal e você tem quantos meses a receita leva para dobrar. Crescendo 8% ao mês, ela dobra a cada 9 meses.
 
-Um exemplo: uma empresa com US$ 900 mil de receita anual, crescendo 8% ao mês, leva cerca de 15,6 meses para chegar a US$ 3 milhões. Na planilha, a conta é =NPER(8%; 0; -900000; 3000000). Pela regra do 72, ela dobra para US$ 1,8 milhão em 9 meses e precisa de mais uns 6 ou 7 para chegar lá. Se ela tem US$ 2,4 milhões em caixa e queima US$ 160 mil por mês, o dinheiro dura 15 meses. Ou seja, o caixa acaba antes de a empresa chegar à régua.
+Um exemplo: uma empresa com US$ 900 mil de receita anual, crescendo 8% ao mês, leva cerca de 15,6 meses para chegar a US$ 3 milhões. Na planilha, a conta é =LN(3000000/900000)/LN(1,08), ou =NPER(8%; 0; -900000; 3000000). Pela regra do 72, ela dobra para US$ 1,8 milhão em 9 meses e precisa de mais uns 6 ou 7 para chegar lá. Se ela tem US$ 2,4 milhões em caixa e queima US$ 160 mil por mês, o dinheiro dura 15 meses. Ou seja, o caixa acaba antes de a empresa chegar à régua.
 
 A regra sugerida por Marc Schröder, da MGV, é que o seed precisa levar você até a régua com cerca de seis meses de folga, porque uma rodada leva tempo para fechar.
 
