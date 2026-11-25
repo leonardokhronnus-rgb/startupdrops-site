@@ -1,7 +1,7 @@
 <article class="news-card">
   <a href="{{ d.href }}" aria-hidden="true" tabindex="-1">{% include "_visual.html" %}</a>
   <div class="card-inner">
-    <span class="card-category">{{ d.kicker }}{% if d.setor %} <span class="card-tag">{{ d.setor }}</span>{% endif %}{% if d.editoria == "rodadas" and d.valor %} <span class="card-tag">{{ d.valor }}</span>{% endif %}</span>
+    <span class="card-category">{{ d.kicker }}{% if d.setor %} <span class="card-tag">{{ d.setor }}</span>{% endif %}</span>
     <h3><a href="{{ d.href }}">{{ d.titulo }}</a></h3>
     <div class="card-bottom"><span>{{ d.data_curta | upper }}</span><a href="{{ d.href }}">LER</a></div>
   </div>
