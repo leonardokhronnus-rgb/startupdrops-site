@@ -68,7 +68,7 @@ document.querySelectorAll('form[action="{{ site.newsletter_action }}"]').forEach
   f.addEventListener('submit',function(){
     setTimeout(function(){
       var m=document.createElement('p');m.className='news-ok';
-      m.innerHTML='<strong>Quase lá!</strong> Enviamos um e-mail de confirmação. Clique no botão dentro dele para começar a receber. Não achou? Olhe em Promoções ou Spam.';
+      m.innerHTML='<strong>Quase lá!</strong> Enviamos um e-mail de confirmação. Clique no botão dentro dele para começar a receber. Não achou? Olhe em Promoções ou Spam e marque como <strong>Não é spam</strong>, para as próximas edições chegarem na caixa de entrada.';
       f.replaceWith(m);
     },300);
   });
