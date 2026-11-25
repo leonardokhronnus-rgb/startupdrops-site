@@ -2,7 +2,6 @@
 titulo: Kaszek fecha fundo de US$ 650 milhões, acima da meta, e diz que vai investir em pelo menos 25 startups
 linha_fina: O sétimo fundo de early stage da gestora passou da meta de US$ 600 milhões. Os cheques vão de R$ 5 milhões a R$ 100 milhões, do pré-seed à série A, com foco em IA e um olho em data centers. O ex-CFO do Nubank Guilherme Lago entra como sócio.
 editoria: rodadas
-destaque: true
 data: 2026-11-25 08:50
 setor: Venture capital
 pais: Brasil

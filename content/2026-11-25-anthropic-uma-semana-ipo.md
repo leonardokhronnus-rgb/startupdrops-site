@@ -2,6 +2,7 @@
 titulo: "Uma semana depois do maior IPO da história: o que a estreia da Anthropic muda para quem empreende"
 linha_fina: A dona do Claude levantou US$ 107,3 bilhões somando a oferta e uma colocação privada, e as ações estrearam 34% acima do preço. O efeito para o ecossistema vai além da Nasdaq e chega à próxima rodada da sua empresa.
 editoria: economia
+destaque: true
 data: 2026-11-25 06:35
 setor: Mercado de capitais
 pais: EUA
