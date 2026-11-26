@@ -2,6 +2,7 @@
 titulo: Maior fusão de techs de capital aberto da história é sobre um problema bem específico de IA
 linha_fina: A Marvell vai comprar a Lumentum por US$ 115 bilhões — não para crescer em tamanho, mas porque a infraestrutura de IA bateu num limite físico do cobre e precisa de luz pra continuar escalando.
 editoria: modelos
+destaque: true
 data: 2026-11-26 09:00
 imagem: /static/img/drops/2026-11-26-marvell-compra-lumentum.jpg
 credito_imagem: "Foto: Reprodução"
