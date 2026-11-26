@@ -10,7 +10,7 @@
       {% if not d.patrocinado %}<div><span class="pill blue">{{ d.kicker | upper }}{% if d.setor %} · {{ d.setor | upper }}{% endif %}</span>{% if d.valor %}<span class="amount">{{ d.valor }}</span>{% endif %}</div>{% endif %}
       <h1>{{ d.titulo }}</h1>
       {% if d.linha_fina %}<p class="lead">{{ d.linha_fina }}</p>{% endif %}
-      <div class="meta-row"><div class="article-meta">POR {{ d.autor | upper }} · {{ d.data_longa | upper }}</div>{% set share_cls = "share-top" %}{% set share_label = "" %}{% set share_google = true %}{% include "_share.html" %}</div>
+      <div class="meta-row"><div class="article-meta">{% if d.autor_avatar %}<img class="autor-avatar" src="{{ d.autor_avatar }}" alt="{{ d.autor }}" loading="lazy" decoding="async">{% endif %}POR {{ d.autor | upper }} · {{ d.data_longa | upper }}</div>{% set share_cls = "share-top" %}{% set share_label = "" %}{% set share_google = true %}{% include "_share.html" %}</div>
       {% set vis_sizes = "(max-width:900px) 100vw, 760px" %}{% include "_visual.html" %}
       {% if d.imagem and d.credito_imagem %}<div class="figcap">{{ d.credito_imagem }}</div>{% endif %}
       {% if d.patrocinado and d.link_cta %}<p class="cta-inline">Oferecido por <b>{{ d.patrocinador }}</b> · <a href="{{ d.link_cta }}" target="_blank" rel="noopener sponsored" data-umami-event="cta-patrocinado-topo" data-umami-event-marca="{{ d.patrocinador }}">{{ d.site or d.link_cta }}</a></p>{% endif %}

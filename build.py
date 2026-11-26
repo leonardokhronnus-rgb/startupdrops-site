@@ -171,6 +171,7 @@ def load_drops():
             "data_longa": f"{dt.day} de {MESES_LONGOS[dt.month - 1]} de {dt.year}",
             "hora": dt.strftime("%H:%M"),
             "autor": meta.get("autor") or config.AUTOR_PADRAO,
+            "autor_avatar": config.AUTOR_AVATARES.get(meta.get("autor") or config.AUTOR_PADRAO),
             "imagem": meta.get("imagem"),
             "credito_imagem": meta.get("credito_imagem") or ("Ilustração StartupDrops" if meta.get("imagem") else ""),
             "fonte": meta.get("fonte"),

@@ -65,3 +65,8 @@ FORMATOS = {
 PATROCINADORES = []
 
 AUTOR_PADRAO = "Redação StartupDrops"
+
+# Avatar (foto pequena e redonda) por autor, usado ao lado do nome nas matérias/coluna.
+AUTOR_AVATARES = {
+    "Leonardo Brasil": "/static/img/autores/leonardo-brasil.jpg",
+}

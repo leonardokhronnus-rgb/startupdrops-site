@@ -10,7 +10,7 @@
         <span class="pill lime">● DESTAQUE DO DIA · {{ d.kicker | upper }}</span>
         <h2><a href="{{ d.href }}">{{ d.titulo }}</a></h2>
         {% if d.linha_fina %}<p>{{ d.linha_fina }}</p>{% endif %}
-        <div class="cover-foot"><div class="article-meta">POR {{ d.autor | upper }} <span style="padding:0 7px">•</span> {{ d.data_curta | upper }}</div></div>
+        <div class="cover-foot"><div class="article-meta">{% if d.autor_avatar %}<img class="autor-avatar" src="{{ d.autor_avatar }}" alt="{{ d.autor }}" loading="lazy" decoding="async">{% endif %}POR {{ d.autor | upper }} <span style="padding:0 7px">•</span> {{ d.data_curta | upper }}</div></div>
       </div>
     </article>
     <div class="cover-side">

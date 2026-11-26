@@ -228,6 +228,8 @@ section .pager-num{margin-top:22px}
 /* compartilhar */
 .meta-row{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin:6px 0 14px}
 .meta-row .article-meta{margin:0}
+.autor-avatar{width:20px;height:20px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:7px;border:1px solid #e3e8f5}
+.cover-main .autor-avatar{border-color:#ffffff40}
 .share{display:flex;align-items:center;gap:14px}
 .share-icons{display:flex;gap:6px}
 .share-icons a{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;color:var(--navy);transition:background .15s,color .15s}
