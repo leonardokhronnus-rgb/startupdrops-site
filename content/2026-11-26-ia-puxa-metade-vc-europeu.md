@@ -2,6 +2,7 @@
 titulo: IA já é mais da metade de todo capital de risco investido na Europa
 linha_fina: Startups europeias de IA captaram US$ 23 bilhões no primeiro semestre de 2026, alta de 130% em um ano — mas 73% desse dinheiro foi parar em só 38 empresas.
 editoria: modelos
+destaque: true
 data: 2026-11-26 08:50
 imagem: /static/img/drops/2026-11-26-ia-puxa-metade-vc-europeu.jpg
 credito_imagem: "Foto: Reprodução"

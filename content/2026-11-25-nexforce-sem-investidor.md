@@ -3,7 +3,6 @@ titulo: Sem investidor, a paulistana Nexforce chegou a R$ 125 milhões de fatura
 linha_fina: A empresa de compras corporativas de software e de roteamento de modelos de IA opera em cinco países e venceu a categoria scaleup do Santander X Brazil Award. É um lembrete de que dá para escalar sem rodada.
 editoria: modelos
 data: 2026-11-25 07:55
-posicao: lateral-1
 setor: Software B2B
 pais: Brasil
 simbolo: R$125M
