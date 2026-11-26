@@ -229,6 +229,10 @@ def write(path, content):
     if path.endswith("/"):
         f = f / "index.html"
     f.parent.mkdir(parents=True, exist_ok=True)
+    if f.suffix == ".html" and "<head>" in content:
+        url = config.SITE["url"].rstrip("/") + path
+        extra = f'<link rel="canonical" href="{url}"><meta property="og:url" content="{url}">'
+        content = content.replace("</head>", extra + "</head>", 1)
     f.write_text(content, encoding="utf-8")
 
 
@@ -384,9 +388,11 @@ def main():
         f"<description>{escape(d['linha_fina'])}</description></item>" for d in drops[:40])
     write("/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{config.SITE["name"]}</title>'
           f"<link>{base}/</link><description>{escape(config.SITE['tagline'])}</description><language>pt-br</language>{items}</channel></rss>")
-    urls = ["/", "/noticias/", "/deal-da-semana/", "/educacao/", "/sobre/", "/anuncie/", "/privacidade/", "/contato/", "/termos/", "/cookies/"] + [f"/{k}/" for k in config.EDITORIAS] + [d["href"] for d in todos]
+    hoje_iso = now.strftime("%Y-%m-%d")
+    urls_estaticas = ["/", "/noticias/", "/deal-da-semana/", "/educacao/", "/sobre/", "/anuncie/", "/privacidade/", "/contato/", "/termos/", "/cookies/"] + [f"/{k}/" for k in config.EDITORIAS]
+    sitemap_itens = [(u, hoje_iso) for u in urls_estaticas] + [(d["href"], d["dt"].strftime("%Y-%m-%d")) for d in todos]
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-          + "".join(f"<url><loc>{base}{u}</loc></url>" for u in urls) + "</urlset>")
+          + "".join(f"<url><loc>{base}{u}</loc><lastmod>{lm}</lastmod></url>" for u, lm in sitemap_itens) + "</urlset>")
     write("/robots.txt", f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")
     print(f"Site gerado com {len(drops)} drops.")
 

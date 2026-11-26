@@ -11,12 +11,16 @@
 <meta property="og:image" content="{{ site.url }}{% block ogimg %}/static/og/home.png{% endblock %}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+<meta name="twitter:description" content="{{ self.desc() }}">
+<meta name="twitter:image" content="{{ site.url }}{{ self.ogimg() }}">
 {% block og %}{% endblock %}
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/style.css?v={{ css_v }}">
 <link rel="icon" type="image/png" href="/static/img/favicon.png"><link rel="apple-touch-icon" href="/static/img/icon-180.png">
+{% block schema %}{% endblock %}
 </head>
 <body>
 <header class="header"><div class="wrap header-inner">

@@ -2,6 +2,11 @@
 {% block desc %}{{ d.linha_fina or d.titulo }}{% endblock %}
 {% block ogtype %}article{% endblock %}
 {% block ogimg %}{{ d.og }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":{{ d.titulo | tojson }},"description":{{ (d.linha_fina or "") | tojson }},"image":[{{ (site.url ~ d.og) | tojson }}],"datePublished":{{ d.dt.isoformat() | tojson }},"dateModified":{{ d.dt.isoformat() | tojson }},"author":{"@type":"Organization","name":{{ d.autor | tojson }}},"publisher":{"@type":"Organization","name":{{ site.name | tojson }},"logo":{"@type":"ImageObject","url":{{ (site.url ~ "/static/img/logo.png") | tojson }}}},"mainEntityOfPage":{"@type":"WebPage","@id":{{ (site.url ~ d.href) | tojson }}}}
+</script>
+{% endblock %}
 {% block main %}
 <div class="news-layout">
   <div>
