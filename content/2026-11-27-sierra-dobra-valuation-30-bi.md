@@ -1,5 +1,7 @@
 ---
-rascunho: true
+imagem: /static/img/drops/2026-11-27-sierra-dobra-valuation-30-bi.jpg
+credito_imagem: Divulgação Sierra
+destaque: true
 titulo: Sierra dobra valuation para US$ 30 bilhões em menos de 6 meses
 linha_fina: A startup de agentes de IA para atendimento ao cliente, cofundada pelo ex-co-CEO da Salesforce Bret Taylor, levantou uma Series F de US$ 1,75 bilhão liderada por Greenoaks e Lightspeed.
 editoria: rodadas

@@ -1,5 +1,6 @@
 ---
-rascunho: true
+imagem: /static/img/drops/2026-11-27-coluna-segundo-em-comando.jpg
+posicao: lateral-2
 titulo: Quem pode dizer não pro seu fundador? Se a resposta for "ninguém", você tem um problema
 linha_fina: Pesquisa da Harvard Business Review mostra que empresa liderada por fundador comete o dobro de deslizes éticos de outras — exceto quando existe um número 2 forte o bastante pra barrar uma decisão ruim. A maioria das startups brasileiras não tem essa peça.
 imagem: /static/img/drops/2026-11-27-coluna-segundo-em-comando.jpg

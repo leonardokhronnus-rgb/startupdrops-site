@@ -1,5 +1,7 @@
 ---
-rascunho: true
+imagem: /static/img/drops/2026-11-27-elevenlabs-negocia-33-bi.jpg
+credito_imagem: Divulgação ElevenLabs
+posicao: lateral-1
 titulo: ElevenLabs negocia rodada que pode avaliá-la em US$ 33 bilhões
 linha_fina: A startup de vozes sintéticas negocia uma captação que a avaliaria a quase 47 vezes a receita anualizada, um triplo da Série D de fevereiro. As conversas estão em estágio inicial, segundo a Bloomberg.
 editoria: rodadas
