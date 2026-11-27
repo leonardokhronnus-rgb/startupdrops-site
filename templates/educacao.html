@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block desc %}Drops de educação para empreendedores: dicas curtas, de menos de 1 minuto, em 7 módulos.{% endblock %}
+{% block desc %}Drops de educação para empreendedores: dicas curtas, de menos de 1 minuto, em {{ edu.modulos | length }} módulos.{% endblock %}
 {% block intro %}
 <section class="intro compact"><div class="wrap"><div><div class="eyebrow">EDUCAÇÃO</div><h1>Drops de <em>educação.</em></h1></div><p class="intro-desc">{{ edu.drops | length }} dicas rápidas para empreendedores, em {{ edu.modulos | length }} módulos. Cada uma leva menos de 1 minuto para ler.</p></div></section>
 {% endblock %}
@@ -9,6 +9,16 @@
 <section class="edu-mod" id="modulo-{{ m.id }}">
   <div class="section-top"><div><span class="section-kicker">MÓDULO {{ '%02d' % (m.id + 1) }}</span><h2 class="section-title" style="margin-top:5px">{{ m.nome }}<span>.</span></h2></div></div>
   <div class="edu-grid">{% for e in edu.drops if e.modulo == m.id %}<article class="edu-card"><span class="edu-emoji">{{ e.emoji }}</span><h3>{{ e.titulo }}</h3><p>{{ e.texto }}</p></article>{% endfor %}</div>
+  {% if m.nome == "Captação & Investidores" %}
+  <div class="edu-cta">
+    <div class="edu-cta-text">
+      <span class="edu-cta-kicker">CURSO STARTUPHERO</span>
+      <h3>Quer aprender a captar na prática?</h3>
+      <p>O Smart Funding ensina, em 10 módulos e 36 aulas, como estruturar sua captação do zero: timing, valuation, pitch deck, due diligence, mapa de 100+ investidores brasileiros e o contrato de investimento. Acesso vitalício.</p>
+    </div>
+    <a class="edu-cta-btn" href="https://startuphero.com.br/curso-smart-funding/" target="_blank" rel="noopener">Conhecer o Smart Funding</a>
+  </div>
+  {% endif %}
 </section>
 {% endfor %}
 {% endblock %}

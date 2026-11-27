@@ -35,6 +35,10 @@
   {
    "id": 8,
    "nome": "Valuation & Saída"
+  },
+  {
+   "id": 9,
+   "nome": "IA para Fundadores"
   }
  ],
  "drops": [
@@ -739,6 +743,126 @@
    "emoji": "🔎",
    "titulo": "O que é due diligence",
    "texto": "É a auditoria que o comprador ou investidor faz antes de fechar: contas, impostos, contratos, trabalhista, tecnologia. Surpresas nessa fase derrubam o preço ou o negócio."
+  },
+  {
+   "modulo": 7,
+   "emoji": "📝",
+   "titulo": "Term sheet: o contrato antes do contrato",
+   "texto": "Documento não vinculante que resume os termos de uma rodada antes do contrato definitivo. Negocie com calma aqui — depois que todo mundo assina, mudar cláusula fica muito mais caro."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🔄",
+   "titulo": "SAFE e mútuo conversível",
+   "texto": "Formas de captar sem fixar valuation na hora: o investidor empresta ou aporta, e o valor vira equity só na próxima rodada, com desconto ou teto de valuation combinado antes."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🏆",
+   "titulo": "Liquidation preference: quem recebe primeiro",
+   "texto": "Cláusula que garante ao investidor receber de volta o que investiu (às vezes com múltiplo) antes dos fundadores, numa venda ou liquidação. Leia com atenção o múltiplo e se é participante."
+  },
+  {
+   "modulo": 7,
+   "emoji": "📊",
+   "titulo": "Cap table limpa é ativo, não burocracia",
+   "texto": "Uma tabela de participação societária confusa, com sócio esquecido ou opção mal documentada, assusta investidor sério e atrasa qualquer rodada ou venda futura."
+  },
+  {
+   "modulo": 7,
+   "emoji": "🌡️",
+   "titulo": "Aquecimento antes do pitch",
+   "texto": "Fale com investidores fora da sua lista prioritária primeiro, pra calibrar objeções e ajustar o discurso. Guarde os investidores que você mais quer pro fim do processo."
+  },
+  {
+   "modulo": 7,
+   "emoji": "⏳",
+   "titulo": "Vesting protege o time, não só o investidor",
+   "texto": "Cláusula que faz o fundador ganhar sua participação aos poucos, ao longo de alguns anos. Protege a empresa se um sócio sair cedo e também sinaliza comprometimento pro investidor."
+  },
+  {
+   "modulo": 7,
+   "emoji": "➕",
+   "titulo": "Follow-on e pro-rata",
+   "texto": "Direito do investidor atual de aportar de novo na próxima rodada, mantendo sua fatia proporcional. Negocie o limite desse direito: ele pode reduzir seu espaço pra trazer gente nova."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🎲",
+   "titulo": "First Chicago: valuation por cenário",
+   "texto": "Em vez de uma única projeção, o método pondera três cenários (otimista, realista, pessimista) pela probabilidade de cada um acontecer. Útil quando o futuro da empresa é muito incerto."
+  },
+  {
+   "modulo": 8,
+   "emoji": "📉",
+   "titulo": "CAPM e a taxa de desconto",
+   "texto": "A taxa usada pra trazer fluxo de caixa futuro a valor presente não é escolhida no chute: ela reflete o risco do negócio e do mercado. Taxa errada distorce o valuation inteiro."
+  },
+  {
+   "modulo": 8,
+   "emoji": "⚖️",
+   "titulo": "Receita ou EBITDA: qual múltiplo usar?",
+   "texto": "Empresa que ainda não dá lucro é avaliada por múltiplo de receita; empresa madura, por múltiplo de EBITDA. Usar o errado pro estágio da empresa infla ou derruba o valuation sem motivo real."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🎯",
+   "titulo": "Comprador estratégico vs financeiro",
+   "texto": "O estratégico paga mais porque ganha sinergia (cliente, tecnologia, distribuição); o financeiro olha só retorno do capital. Saber qual tipo está na mesa muda toda a negociação."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🔒",
+   "titulo": "Cláusula de não-competição tem prazo e preço",
+   "texto": "Ao vender, você pode ser impedido de atuar no mesmo setor por anos. Isso tem valor — negocie compensação por essa cláusula, não só pelo negócio em si."
+  },
+  {
+   "modulo": 8,
+   "emoji": "⚠️",
+   "titulo": "Valuation overhang: quando o valuation alto vira problema",
+   "texto": "Captar caro demais numa rodada cria uma régua difícil de superar na próxima. Se o crescimento não acompanhar, a empresa trava numa rodada 'flat' ou 'down' que machuca todo mundo."
+  },
+  {
+   "modulo": 8,
+   "emoji": "🧮",
+   "titulo": "Apuração de haveres: valuation forçado",
+   "texto": "Quando uma sociedade se dissolve, o valor da parte de cada sócio é apurado mesmo sem venda real. É valuation técnico, muitas vezes judicial, e vale conhecer antes de brigar com seu sócio."
+  },
+  {
+   "modulo": 9,
+   "emoji": "💸",
+   "titulo": "Preço de IA não é fixo, é variável",
+   "texto": "Se seu produto usa modelo de IA por trás, seu custo sobe e desce com o uso de cada cliente. Cobrar preço fixo por usuário, como no SaaS clássico, pode te deixar no prejuízo com cliente pesado."
+  },
+  {
+   "modulo": 9,
+   "emoji": "🔌",
+   "titulo": "Risco de fornecedor de modelo",
+   "texto": "Depender de um único modelo de IA é como depender de um único fornecedor numa cadeia de suprimento. Tenha um plano B se o modelo que você usa mudar de preço, de política ou sair do ar."
+  },
+  {
+   "modulo": 9,
+   "emoji": "🤖",
+   "titulo": "Agente não é só chatbot",
+   "texto": "Um agente de IA toma decisões e executa ações em várias etapas sozinho, não só responde pergunta. Antes de contratar ou construir um, defina exatamente qual decisão ele vai tomar sem supervisão."
+  },
+  {
+   "modulo": 9,
+   "emoji": "📈",
+   "titulo": "Produtividade não é lucro",
+   "texto": "IA deixar um processo mais rápido não significa mais dinheiro no caixa. Só vira lucro se você cortar custo de verdade ou vender mais sem aumentar o custo na mesma proporção."
+  },
+  {
+   "modulo": 9,
+   "emoji": "🧩",
+   "titulo": "Vire a peça que falta, não o concorrente",
+   "texto": "Big techs de IA estão comprando startups pequenas que resolvem um problema técnico específico do produto delas, mesmo sem receita relevante. Pode ser uma rota de saída real."
+  },
+  {
+   "modulo": 9,
+   "emoji": "🔍",
+   "titulo": "Pergunte antes de contratar consultoria de IA",
+   "texto": "Peça caso de cliente com resultado em métrica financeira (margem, receita), não só em velocidade de processo. Consultoria que só mostra produtividade pode não entregar lucro de verdade."
   }
  ]
 }

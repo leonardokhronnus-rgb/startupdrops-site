@@ -272,3 +272,12 @@ section .pager-num{margin-top:22px}
 
 .side-section.sidebar-signup{padding:23px;margin-top:25px}
 @media(max-width:900px){.side-section.sidebar-signup{padding:26px 22px}}
+
+.edu-cta{margin-top:16px;background:var(--blue);border-radius:12px;padding:26px 30px;display:flex;justify-content:space-between;align-items:center;gap:24px;position:relative;overflow:hidden}
+.edu-cta:after{content:'$';position:absolute;font:700 200px var(--display);color:#ffffff0f;right:4%;top:-70px;pointer-events:none}
+.edu-cta-text{position:relative;max-width:620px}
+.edu-cta-kicker{font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
+.edu-cta-text h3{font:700 clamp(19px,2vw,24px)/1.2 var(--display);letter-spacing:-.4px;color:#fff;margin:10px 0 8px}
+.edu-cta-text p{font-size:13px;line-height:1.6;color:#dce5ff;margin:0}
+.edu-cta-btn{position:relative;background:var(--lime);color:var(--navy);padding:14px 20px;border-radius:7px;font-size:12px;font-weight:900;white-space:nowrap;flex-shrink:0}
+@media(max-width:700px){.edu-cta{flex-direction:column;align-items:flex-start}.edu-cta-btn{align-self:stretch;text-align:center}}
