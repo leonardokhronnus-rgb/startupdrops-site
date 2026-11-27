@@ -289,7 +289,7 @@ def main():
         analytics=config.ANALYTICS,
     )
     deals_semana = [d for d in drops if d["deal_da_semana"]]
-    render = lambda tpl, **kw: env.get_template(tpl).render(**common, **kw)
+    render = lambda tpl, **kw: env.get_template(tpl).render(**{**common, **kw})
 
     # Home
     edu_all = json.loads((ROOT / "content" / "educacao.json").read_text(encoding="utf-8")) if (ROOT / "content" / "educacao.json").exists() else {"modulos": [], "drops": []}
@@ -362,10 +362,12 @@ def main():
     # Drops
     for d in drops:
         rel = [x for x in por_ed[d["editoria"]] if x is not d][:4]
-        write(d["href"], render("drop.html", active=d["editoria"], title=d["titulo"], d=d, rel=rel))
+        artigos_side = [x for x in por_ed["artigos"] if x is not d][:3]
+        write(d["href"], render("drop.html", active=d["editoria"], title=d["titulo"], d=d, rel=rel, artigos_side=artigos_side))
 
     for d in patrocinados:
-        write(d["href"], render("drop.html", active=None, title=d["titulo"], d=d, rel=[]))
+        artigos_side = [x for x in por_ed["artigos"] if x is not d][:3]
+        write(d["href"], render("drop.html", active=None, title=d["titulo"], d=d, rel=[], artigos_side=artigos_side))
     edu = json.loads((ROOT / "content" / "educacao.json").read_text(encoding="utf-8")) if (ROOT / "content" / "educacao.json").exists() else {"modulos": [], "drops": []}
     write("/educacao/", render("educacao.html", active="educacao", title="Educação", edu=edu))
     write("/deal-da-semana/", render("deals.html", active="rodadas", title="Deal da Semana", itens=deals_semana))
