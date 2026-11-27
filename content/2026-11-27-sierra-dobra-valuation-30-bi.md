@@ -1,4 +1,5 @@
 ---
+rascunho: true
 imagem: /static/img/drops/2026-11-27-sierra-dobra-valuation-30-bi.jpg
 credito_imagem: Divulgação Sierra
 titulo: Sierra dobra valuation para US$ 30 bilhões em menos de 6 meses
