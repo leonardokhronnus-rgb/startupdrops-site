@@ -1,5 +1,6 @@
 ---
 imagem: /static/img/drops/2026-11-27-coluna-stablecoin-conta-dolar.jpg
+posicao: lateral-1
 titulo: Stablecoin virou conta em dólar de gente comum, e o Brasil ainda trata isso como nicho cripto
 linha_fina: A Tether investiu na argentina Lemon pra virar o saldo em dólar dentro do app, não pra vender trade. 85% do volume já é em moeda local. É dolarização de poupança do dia a dia, e quem entender isso primeiro no Brasil sai na frente.
 imagem: /static/img/drops/2026-11-27-coluna-stablecoin-conta-dolar.jpg
