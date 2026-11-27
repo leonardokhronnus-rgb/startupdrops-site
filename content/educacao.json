@@ -753,8 +753,8 @@
   {
    "modulo": 7,
    "emoji": "🔄",
-   "titulo": "SAFE e mútuo conversível",
-   "texto": "Formas de captar sem fixar valuation na hora: o investidor empresta ou aporta, e o valor vira equity só na próxima rodada, com desconto ou teto de valuation combinado antes."
+   "titulo": "SAFE: captar sem travar valuation ainda",
+   "texto": "Instrumento parecido com o mútuo conversível, mas sem juros e sem data de vencimento: o investidor aporta e o valor vira equity só na rodada seguinte, com desconto ou teto combinado antes."
   },
   {
    "modulo": 7,
