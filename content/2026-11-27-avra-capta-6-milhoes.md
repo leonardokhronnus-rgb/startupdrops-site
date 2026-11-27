@@ -1,4 +1,5 @@
 ---
+rascunho: true
 titulo: Avra capta US$ 6 milhões para escalar IA relacional pra PMEs
 linha_fina: A startup brasileira, que usa IA para decisão de crédito, fraude e aquisição de clientes, multiplicou por 8 a receita recorrente este ano, depois de dois anos com só dois clientes. Rodada seed foi liderada pela argentina NXTP.
 editoria: rodadas

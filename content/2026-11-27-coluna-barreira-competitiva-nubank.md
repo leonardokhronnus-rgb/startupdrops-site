@@ -1,4 +1,5 @@
 ---
+rascunho: true
 titulo: Toda disrupção também constrói uma barreira pro próximo que tentar o mesmo
 linha_fina: Relatório da Bain mostra que a reação dos bancos tradicionais ao Nubank reduziu a vantagem dos digitais de 44 para 13 pontos de NPS em seis anos. Quem acha que vai repetir a jogada do disruptor original está competindo com um adversário diferente do que ele enfrentou.
 imagem: /static/img/drops/2026-11-27-coluna-barreira-competitiva-nubank.jpg

@@ -1,4 +1,5 @@
 ---
+rascunho: true
 titulo: O que trava o fundador na hora de se preparar pra vender não é a planilha, é o espelho
 linha_fina: Artigo do European Business Review mostra que o maior obstáculo pra um fundador se preparar pra uma saída estratégica é emocional, não financeiro. Eu vejo isso toda semana em mandato de venda na StartupHero.
 imagem: /static/img/drops/2026-11-27-coluna-medo-de-vender.jpg

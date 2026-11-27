@@ -1,4 +1,5 @@
 ---
+rascunho: true
 titulo: Pax entra em programa restrito de cibersegurança da OpenAI
 linha_fina: A startup brasileira de tecnologia para investigação policial, que já levantou US$ 40 milhões com Benchmark e Greenoaks, foi aprovada no Daybreak Blue, programa da OpenAI com acesso restrito a recursos avançados de defesa cibernética.
 editoria: rodadas

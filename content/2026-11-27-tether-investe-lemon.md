@@ -1,4 +1,5 @@
 ---
+rascunho: true
 titulo: Tether investe US$ 14,5 milhões na Lemon e USDT vira saldo em dólar do app
 linha_fina: A emissora da maior stablecoin do mundo aporta na fintech argentina, que troca a USDC da rival Circle pela USDT. É a sexta aposta da Tether na América Latina este ano, nove dias depois de investir na brasileira Nomad.
 editoria: rodadas
