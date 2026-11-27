@@ -1,7 +1,8 @@
 ---
 imagem: /static/img/drops/2026-11-27-coluna-mckinsey-lucro-ia.jpg
 posicao: lateral-2
-titulo: A própria McKinsey admite: a IA ainda não está aumentando o lucro de quase ninguém
+titulo: A própria McKinsey admite: só 37% das empresas dizem que a IA aumentou o lucro
+slug: a-propria-mckinsey-admite-a-ia-ainda-nao-esta-aumentando-o-lucro-de-quase-ningue
 linha_fina: Pesquisa citada pela Fortune mostra que só 37% das empresas reportam impacto positivo da IA no resultado financeiro, e a maioria dos ganhos é pequeno. O erro não é usar IA, é confundir produtividade com lucro.
 imagem: /static/img/drops/2026-11-27-coluna-mckinsey-lucro-ia.jpg
 credito_imagem: "Foto: Reprodução"
